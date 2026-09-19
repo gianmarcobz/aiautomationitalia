@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="it-IT" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<style>								
+					form#stickyelements-form input::-moz-placeholder{
+						color: #4F4F4F;
+					} 
+					form#stickyelements-form input::-ms-input-placeholder{
+						color: #4F4F4F					} 
+					form#stickyelements-form input::-webkit-input-placeholder{
+						color: #4F4F4F					}
+					form#stickyelements-form input::placeholder{
+						color: #4F4F4F					}
+					form#stickyelements-form textarea::placeholder {
+						color: #4F4F4F					}
+					form#stickyelements-form textarea::-moz-placeholder {
+						color: #4F4F4F					}					
+			</style>	
+				<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- Ottimizzazione per i motori di ricerca di Rank Math - https://rankmath.com/ -->
+<meta name="description" content="Sblocca il pieno potenziale dell&#039;automazione con il self-hosting di n8n per un controllo totale su dati e costi. Questa guida completa ti accompagna passo"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia" />
+<meta property="og:description" content="Sblocca il pieno potenziale dell&#039;automazione con il self-hosting di n8n per un controllo totale su dati e costi. Questa guida completa ti accompagna passo" />
+<meta property="og:url" content="https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/" />
+<meta property="og:site_name" content="AI Automation Italia - La prima Community Italiana per l&#039;Automazione AI" />
+<meta property="article:section" content="Guide" />
+<meta property="og:image" content="https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png" />
+<meta property="og:image:secure_url" content="https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="349" />
+<meta property="og:image:alt" content="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2026-06-24T08:28:59+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia" />
+<meta name="twitter:description" content="Sblocca il pieno potenziale dell&#039;automazione con il self-hosting di n8n per un controllo totale su dati e costi. Questa guida completa ti accompagna passo" />
+<meta name="twitter:creator" content="@com" />
+<meta name="twitter:image" content="https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png" />
+<meta name="twitter:label1" content="Scritto da" />
+<meta name="twitter:data1" content="Gianmarco Bazzato" />
+<meta name="twitter:label2" content="Tempo di lettura" />
+<meta name="twitter:data2" content="28 minuti" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://aiautomationitalia.com/#organization","name":"AI Automation Italia","url":"https://aiautomationitalia.com","logo":{"@type":"ImageObject","@id":"https://aiautomationitalia.com/#logo","url":"https://aiautomationitalia.com/wp-content/uploads/2025/09/AI-AUTOMATION-ITALIA.png","contentUrl":"https://aiautomationitalia.com/wp-content/uploads/2025/09/AI-AUTOMATION-ITALIA.png","caption":"AI Automation Italia - La prima Community Italiana per l'Automazione AI","inLanguage":"it-IT","width":"1920","height":"1080"}},{"@type":"WebSite","@id":"https://aiautomationitalia.com/#website","url":"https://aiautomationitalia.com","name":"AI Automation Italia - La prima Community Italiana per l'Automazione AI","publisher":{"@id":"https://aiautomationitalia.com/#organization"},"inLanguage":"it-IT"},{"@type":"ImageObject","@id":"https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png","url":"https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png","width":"640","height":"349","inLanguage":"it-IT"},{"@type":"WebPage","@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#webpage","url":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/","name":"n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia","datePublished":"2026-06-24T08:28:59+00:00","dateModified":"2026-06-24T08:28:59+00:00","isPartOf":{"@id":"https://aiautomationitalia.com/#website"},"primaryImageOfPage":{"@id":"https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png"},"inLanguage":"it-IT"},{"@type":"Person","@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#author","name":"Gianmarco Bazzato","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/4134bd3724a56379f8279611ffafc6e229157edbec4f11c192a0880d3b54d4fd?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/4134bd3724a56379f8279611ffafc6e229157edbec4f11c192a0880d3b54d4fd?s=96&amp;d=mm&amp;r=g","caption":"Gianmarco Bazzato","inLanguage":"it-IT"},"sameAs":["https://aiautomationitalia.com","https://twitter.com/amministrazione@darmaenergia.com"],"worksFor":{"@id":"https://aiautomationitalia.com/#organization"}},{"@type":"BlogPosting","headline":"n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia","datePublished":"2026-06-24T08:28:59+00:00","dateModified":"2026-06-24T08:28:59+00:00","articleSection":"Guide","author":{"@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#author","name":"Gianmarco Bazzato"},"publisher":{"@id":"https://aiautomationitalia.com/#organization"},"description":"Sblocca il pieno potenziale dell&#039;automazione con il self-hosting di n8n per un controllo totale su dati e costi. Questa guida completa ti accompagna passo","name":"n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia","@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#richSnippet","isPartOf":{"@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#webpage"},"image":{"@id":"https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png"},"inLanguage":"it-IT","mainEntityOfPage":{"@id":"https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<title>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile &#045; AI Automation Italia</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="AI Automation Italia &raquo; Feed" href="https://aiautomationitalia.com/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aiautomationitalia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=3db4c5d2193cf0ee8ff1de3af3ffb933"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+</style>
+<style id='wp-block-site-title-inline-css'>
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='wp-block-group-theme-inline-css'>
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://aiautomationitalia.com/wp-includes/blocks/navigation/style.min.css?ver=3db4c5d2193cf0ee8ff1de3af3ffb933' media='all' />
+<style id='wp-block-separator-inline-css'>
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+</style>
+<style id='wp-block-separator-theme-inline-css'>
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+</style>
+<link rel='stylesheet' id='wp-block-social-links-css' href='https://aiautomationitalia.com/wp-includes/blocks/social-links/style.min.css?ver=3db4c5d2193cf0ee8ff1de3af3ffb933' media='all' />
+<style id='wp-block-template-part-theme-inline-css'>
+:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id='wp-block-post-content-inline-css'>
+.wp-block-post-content{display:flow-root}
+</style>
+<style id='wp-block-post-terms-inline-css'>
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+</style>
+<style id='wp-block-comments-inline-css'>
+.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #0B51C2;--wp--preset--color--secondary: #ec7210;--wp--preset--color--tertiary: #F9FAFE;--wp--preset--color--foreground-alt: #333333;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.25rem;--wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 1.433), 2.25rem);--wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.917), 3rem);--wp--preset--font-size--xx-large: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 2.5), 3.75rem);--wp--preset--font-family--archivo: "Archivo", sans-serif;--wp--preset--font-family--arsenal: "Arsenal", serif;--wp--preset--font-family--baloo-tamma-2: "Baloo Tamma 2", sans-serif;--wp--preset--font-family--geom: "Geom", sans-serif;--wp--preset--font-family--gotu: "Gotu", sans-serif;--wp--preset--font-family--heebo: "Heebo", sans-serif;--wp--preset--font-family--body: "Hind", sans-serif;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--inconsolata: "Inconsolata", sans-serif;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--jost: "Jost", sans-serif;--wp--preset--font-family--karla: "Karla", sans-serif;--wp--preset--font-family--koulen: "Koulen", sans-serif;--wp--preset--font-family--manrope: "Manrope", sans-serif;--wp--preset--font-family--marcellus: 'Marcellus', serif;--wp--preset--font-family--montserrat: "Montserrat", sans-serif;--wp--preset--font-family--mulish: "Mulish", sans-serif;--wp--preset--font-family--noto-serif-display: "Noto Serif Display", serif;--wp--preset--font-family--oswald: "Oswald", sans-serif;--wp--preset--font-family--radio-canada: "Radio Canada", sans-serif;--wp--preset--font-family--roboto-flex: "Roboto Flex", sans-serif;--wp--preset--font-family--rubik: "Rubik", sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--font-family--space-mono: "Space Mono", monospace;--wp--preset--spacing--20: 1rem;--wp--preset--spacing--30: min(2rem, 5vw);--wp--preset--spacing--40: min(3rem, 6vw);--wp--preset--spacing--50: min(4rem, 7vw);--wp--preset--spacing--60: min(6rem, 8vw);--wp--preset--spacing--70: min(7rem, 10vw);--wp--preset--spacing--80: min(8rem, 12vw);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--custom--blocks--core-table--variant-stripes--color--background: var(--wp--preset--color--tertiary);--wp--custom--typography--font-smoothing--moz: grayscale;--wp--custom--typography--font-smoothing--webkit: antialiased;--wp--custom--typography--font-weight--black: 900;--wp--custom--typography--font-weight--extra-bold: 800;--wp--custom--typography--font-weight--bold: 700;--wp--custom--typography--font-weight--semi-bold: 600;--wp--custom--typography--font-weight--medium: 500;--wp--custom--typography--font-weight--regular: 400;--wp--custom--typography--font-weight--light: 300;--wp--custom--typography--font-weight--extra-light: 200;--wp--custom--typography--font-weight--thin: 100;--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;--wp--custom--typography--line-height--large: 1.8;--wp--custom--elements--button--border--radius: 2rem;--wp--custom--elements--button--color--background: var(--wp--preset--color--secondary);--wp--custom--elements--button--color--text: var(--wp--preset--color--foreground);--wp--custom--elements--button--hover--color--background: var(--wp--preset--color--foreground);--wp--custom--elements--button--hover--color--text: var(--wp--preset--color--background);--wp--custom--elements--button--focus--color--background: var(--wp--preset--color--foreground);--wp--custom--elements--button--focus--color--text: var(--wp--preset--color--background);--wp--custom--elements--input--border--radius: 4px;--wp--custom--elements--input--border--width: 1px;--wp--custom--elements--input--border--color: var(--wp--preset--color--foreground);--wp--custom--elements--input--color--background: var(--wp--preset--color--background);--wp--custom--elements--input--color--text: var(--wp--preset--color--foreground);--wp--custom--elements--input--spacing--padding--bottom: calc(0.667em + 1px);--wp--custom--elements--input--spacing--padding--left: calc(1.333em + 1px);--wp--custom--elements--input--spacing--padding--right: calc(1.333em + 1px);--wp--custom--elements--input--spacing--padding--top: calc(0.667em + 1px);--wp--custom--elements--input--typography--font-size: inherit;--wp--custom--elements--input--typography--font-weight: var(--wp--custom--font-weight--regular);--wp--custom--elements--input--typography--line-height: var(--wp--custom--typography--line-height--normal);}:root { --wp--style--global--content-size: 42rem;--wp--style--global--wide-size: 80rem; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--wp--preset--spacing--30); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: var(--wp--preset--spacing--30); }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.is-layout-flex){gap: var(--wp--preset--spacing--30);}:root :where(.is-layout-grid){gap: var(--wp--preset--spacing--30);}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground-alt);font-family: var(--wp--preset--font-family--inter);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.417), 1.125rem);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);--wp--style--root--padding-top: 0;--wp--style--root--padding-right: var(--wp--preset--spacing--30);--wp--style--root--padding-bottom: 0;--wp--style--root--padding-left: var(--wp--preset--spacing--30);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--foreground);text-decoration: underline;}h1, h2, h3, h4, h5, h6{color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--roboto-flex);}h1{font-size: var(--wp--preset--font-size--xx-large);font-weight: 400;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-size: var(--wp--preset--font-size--x-large);font-weight: 400;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h3{font-size: var(--wp--preset--font-size--large);font-weight: 500;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.48rem) * 0.721), 1.875rem);font-weight: 500;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.48rem) * 0.721), 1.5rem);font-weight: 500;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.417), 1.125rem);font-weight: 500;letter-spacing: 0.03em;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background: linear-gradient(135deg,rgb(236,114,16) 0%,rgb(155,81,224) 100%);background-color: var(--wp--custom--elements--button--color--background);border-radius: var(--wp--custom--elements--button--border--radius);border-width: 0;color: var(--wp--preset--color--background);font-family: inherit;font-size: inherit;font-weight: var(--wp--custom--typography--font-weight--medium);line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--custom--elements--button--hover--color--background);color: var(--wp--custom--elements--button--hover--color--text);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--custom--elements--button--focus--color--background);color: var(--wp--custom--elements--button--focus--color--text);outline-color: var(--wp--custom--elements--button--focus--color--background);outline-offset: 2px;}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--custom--elements--button--hover--color--background);color: var(--wp--custom--elements--button--hover--color--text);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-color{color: var(--wp--preset--color--foreground-alt) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-background-color{background-color: var(--wp--preset--color--foreground-alt) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-border-color{border-color: var(--wp--preset--color--foreground-alt) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-archivo-font-family{font-family: var(--wp--preset--font-family--archivo) !important;}.has-arsenal-font-family{font-family: var(--wp--preset--font-family--arsenal) !important;}.has-baloo-tamma-2-font-family{font-family: var(--wp--preset--font-family--baloo-tamma-2) !important;}.has-geom-font-family{font-family: var(--wp--preset--font-family--geom) !important;}.has-gotu-font-family{font-family: var(--wp--preset--font-family--gotu) !important;}.has-heebo-font-family{font-family: var(--wp--preset--font-family--heebo) !important;}.has-body-font-family{font-family: var(--wp--preset--font-family--body) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-inconsolata-font-family{font-family: var(--wp--preset--font-family--inconsolata) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-karla-font-family{font-family: var(--wp--preset--font-family--karla) !important;}.has-koulen-font-family{font-family: var(--wp--preset--font-family--koulen) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-marcellus-font-family{font-family: var(--wp--preset--font-family--marcellus) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-mulish-font-family{font-family: var(--wp--preset--font-family--mulish) !important;}.has-noto-serif-display-font-family{font-family: var(--wp--preset--font-family--noto-serif-display) !important;}.has-oswald-font-family{font-family: var(--wp--preset--font-family--oswald) !important;}.has-radio-canada-font-family{font-family: var(--wp--preset--font-family--radio-canada) !important;}.has-roboto-flex-font-family{font-family: var(--wp--preset--font-family--roboto-flex) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.wp-block-heading 
+{ overflow-wrap: break-word; hyphens: auto; text-wrap: balance; } 
+.wp-block-heading:lang(zh), .wp-block-heading:lang(ja), .wp-block-heading:lang(ko), .wp-block-heading:lang(th), .wp-block-heading:lang(lo), .wp-block-heading:lang(my), .wp-block-heading:lang(km), .wp-block-heading:lang(ar), .wp-block-heading:lang(ur) { word-break: keep-all; hyphens: manual; }
+.pulsante-invio-form-consulenza {
+
+	background-color: #ec7210;
+
+.wpforms-block button.wpforms-submit {
+	background-color: #ec7210 !important;
+}	
+}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date){font-size: var(--wp--preset--font-size--small);text-decoration: none;text-transform: uppercase;}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}
+:root :where(.wp-block-separator){color: var(--wp--preset--color--foreground);}
+:root :where(.wp-block-site-title){font-family: var(--wp--preset--font-family--heading);font-size: var(--wp--preset--font-size--large);font-weight: var(--wp--custom--typography--font-weight--bold);line-height: var(--wp--custom--typography--line-height--tiny);}
+:root :where(.wp-block-template-part){margin-top: 0px;}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-elements-93b67a512692fcfcfc4520b11f003c20 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--background);}.wp-container-core-group-is-layout-3b4e9d3e{flex-wrap:nowrap;gap:1rem;}.wp-container-core-navigation-is-layout-f665d2b5{justify-content:flex-end;}.wp-container-core-social-links-is-layout-72308760{flex-wrap:nowrap;gap:1rem;justify-content:flex-end;}.wp-container-core-group-is-layout-ceead2e9{gap:var(--wp--preset--spacing--30);justify-content:space-between;}.wp-container-core-group-is-layout-f9cb6abc > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-f9cb6abc > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7d13c79f > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7d13c79f > * + *{margin-block-start:0.5rem;margin-block-end:0;}.wp-container-core-group-is-layout-c4378f5b > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-c4378f5b > * + *{margin-block-start:2.5rem;margin-block-end:0;}.wp-container-core-group-is-layout-5cc37658 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-5cc37658 > * + *{margin-block-start:3rem;margin-block-end:0;}.wp-container-core-social-links-is-layout-b20f1b96{gap:10px 10px;justify-content:center;}.wp-container-core-group-is-layout-f5bb311e > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-f5bb311e > * + *{margin-block-start:var(--wp--preset--spacing--30);margin-block-end:0;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.76' media='all' />
+<style id='ez-toc-inline-css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-size: 95%;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<link rel='stylesheet' id='extendable-style-css' href='https://aiautomationitalia.com/wp-content/themes/extendable/style.css?ver=2.0.29' media='all' />
+<link rel='stylesheet' id='mystickyelements-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&#038;ver=6.8.3' media='all' />
+<link rel='stylesheet' id='font-awesome-css-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/css/font-awesome.min.css?ver=2.3.2' media='all' />
+<link rel='stylesheet' id='mystickyelements-front-css-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/css/mystickyelements-front.min.css?ver=2.3.2' media='all' />
+<link rel='stylesheet' id='intl-tel-input-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/intl-tel-input-src/build/css/intlTelInput.css?ver=2.3.2' media='all' />
+<script src="https://aiautomationitalia.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://aiautomationitalia.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://aiautomationitalia.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://aiautomationitalia.com/wp-json/wp/v2/posts/780" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://aiautomationitalia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiautomationitalia.com%2Fn8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://aiautomationitalia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiautomationitalia.com%2Fn8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile%2F&#038;format=xml" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["guide"],"pagePostAuthor":"Gianmarco Bazzato"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCBK9W69');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"https:\/\/aiautomationitalia.com\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="https://aiautomationitalia.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="https://aiautomationitalia.com/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload"><style class='wp-fonts-local'>
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/archivo/archivo_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Arsenal;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/arsenal/arsenal-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Arsenal;font-style:normal;font-weight:700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/arsenal/arsenal-bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Baloo Tamma 2";font-style:normal;font-weight:400 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/baloo-tamma-2/baloo-tamma-2_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Geom;font-style:normal;font-weight:300 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/geom/geom-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Gotu;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/gotu/gotu-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Heebo;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/heebo/heebo-variable-wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Hind;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/hind/hind-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-thin.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:200;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-extra-light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:300;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:500;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-medium.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:600;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-semibold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inconsolata;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/inconsolata/inconsolata-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/inter/inter-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Jost;font-style:normal;font-weight:100 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/jost/jost-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Karla;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/karla/karla.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Koulen;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/koulen/koulen-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/manrope/manrope.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Marcellus;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/marcellus/marcellus_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/montserrat/montserrat.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Mulish;font-style:normal;font-weight:100 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/mulish/mulish.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Noto Serif Display";font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/noto-serif-display/noto-serif-display.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Oswald;font-style:normal;font-weight:300 700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/oswald/oswald.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Radio Canada";font-style:normal;font-weight:300 700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/radio-canada/radio-canada.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Roboto Flex";font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/roboto-flex/roboto-flex.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Rubik;font-style:normal;font-weight:300 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/rubik/rubik.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/source-serif-pro/source-serif-pro.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:400;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/space-mono/space-mono-regular.woff2') format('woff2');}
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:700;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/space-mono/space-mono-bold.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-180x180.png" />
+<meta name="msapplication-TileImage" content="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-270x270.png" />
+<style id="aiai-fixes-css">
+@media (max-width:782px){.mystickyelements-fixed,.mystickyelements-minimize{display:none!important;}}
+.aiai-foundational{border-left:4px solid #e8651f;background:#faf6f2;padding:12px 16px;margin:20px 0;border-radius:4px;font-size:.95em;}
+.aiai-foundational a{color:#c0410a;font-weight:600;}
+.aiai-related{margin:40px 0 16px;padding-top:20px;border-top:1px solid #e5e5e5;}
+.aiai-related h3{margin:0 0 12px;font-size:1.15em;}
+.aiai-related ul{margin:0;padding-left:18px;}
+.aiai-related li{margin:6px 0;}
+.aiai-related a{color:#c0410a;font-weight:600;}
+.aiai-cta{margin:24px 0;padding:18px 20px;background:linear-gradient(135deg,#e8651f,#c0410a);border-radius:8px;color:#fff;}
+.aiai-cta a{display:inline-block;margin-top:6px;color:#fff;font-weight:700;text-decoration:underline;}
+</style>
+</head>
+
+<body data-rsssl=1 class="wp-singular post-template-default single single-post postid-780 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-extendable">
+
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCBK9W69" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wp-site-blocks"><header class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color has-foreground-background-color has-text-color has-background has-link-color has-rubik-font-family wp-elements-93b67a512692fcfcfc4520b11f003c20 is-layout-flow wp-container-core-group-is-layout-f9cb6abc wp-block-group-is-layout-flow" style="border-style:none;border-width:0px;border-radius:0px;margin-top:0;margin-bottom:0">
+<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-ceead2e9 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-3b4e9d3e wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="https://aiautomationitalia.com/" class="custom-logo-link" rel="home"><img width="66" height="66" src="https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited.png" class="custom-logo" alt="AI Automation Italia" decoding="async" srcset="https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited.png 346w, https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited-300x300.png 300w, https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited-150x150.png 150w" sizes="(max-width: 66px) 100vw, 66px" /></a></div>
+
+<h1 style="text-transform:uppercase;" class="wp-block-site-title has-medium-font-size"><a href="https://aiautomationitalia.com" target="_self" rel="home">AI Automation Italia</a></h1></div>
+
+
+<nav style="text-transform:uppercase;" class="is-responsive items-justified-right wp-block-navigation has-geom-font-family is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-f665d2b5 wp-block-navigation-is-layout-flex" aria-label="Navigazione dell&#039;intestazione" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Apri menu" class="wp-block-navigation__responsive-container-open" 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 5v1.5h14V5H5zm0 7.8h14v-1.5H5v1.5zM5 19h14v-1.5H5V19z" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  has-text-color has-foreground-color has-background has-background-background-color"  id="modal-1" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Chiudi menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-1-content">
+								<ul style="text-transform:uppercase;" class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation has-geom-font-family"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/"><span class="wp-block-navigation-item__label">Homepage</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/manifesto/"><span class="wp-block-navigation-item__label">manifesto</span></a></li><li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="https://aiautomationitalia.com/blog/"><span class="wp-block-navigation-item__label">Blog</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Sottomenu di Blog" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-foreground-color has-background has-background-background-color wp-block-navigation-submenu"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/articoli/"><span class="wp-block-navigation-item__label">Articoli e Notizie AI Automation</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/guide/"><span class="wp-block-navigation-item__label">Guide</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/workflow-template/"><span class="wp-block-navigation-item__label">Workflow N8N Template</span></a></li></ul></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/consulenza/"><span class="wp-block-navigation-item__label">Consulenza</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/migliori-tool-ai-automazione-sconti-saas/"><span class="wp-block-navigation-item__label">Sconti SaaS</span></a></li></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only ext-hidden tablet:ext-flex is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-72308760 wp-block-social-links-is-layout-flex"><li style="color: #ffffff; " class="wp-social-link wp-social-link-instagram has-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://instagram.com/aiautomationitalia" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+
+<li style="color: #ffffff; " class="wp-social-link wp-social-link-x has-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://x.com/aiautomationita" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" /></svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li></ul>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group is-layout-flow wp-container-core-group-is-layout-5cc37658 wp-block-group-is-layout-flow" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--custom--spacing--medium);padding-bottom:var(--wp--custom--spacing--medium)">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c4378f5b wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-7d13c79f wp-block-group-is-layout-constrained"><h1 style="text-transform:uppercase;" class="wp-block-post-title has-x-large-font-size"><a href="https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/" target="_self" >n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile</a></h1>
+
+<div class="wp-block-post-date"><time datetime="2026-06-24T08:28:59+00:00">Giugno 24, 2026</time></div></div>
+
+
+<figure style="aspect-ratio:16/9;width:50%;" class="alignwide wp-block-post-featured-image"><a href="https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/" target="_self"  ><img width="640" height="349" src="https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile" style="width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" srcset="https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3.png 640w, https://aiautomationitalia.com/wp-content/uploads/2026/06/image-3-300x164.png 300w" sizes="(max-width: 640px) 100vw, 640px" title="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 1"></a></figure></div>
+
+
+<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained"><div id="ez-toc-container" class="ez-toc-v2_0_76 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title" style="cursor:inherit">Indice dei contenuti</p>
+<span class="ez-toc-title-toggle"><a href="#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content"><span class="ez-toc-js-icon-con"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></span></a></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-1'><a class="ez-toc-link ez-toc-heading-1" href="#n8n_self_hosting_guida_completa_e_aggiornata_per_un_deploy_sicuro_e_scalabile" >n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile</a><ul class='ez-toc-list-level-2' ><li class='ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Perche_self-hostare_n8n_casi_duso_vantaggi_limiti_e_requisiti" >Perché self-hostare n8n: casi d’uso, vantaggi, limiti e requisiti</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Edizioni_licenze_e_architettura_consigliata_app_database_reverse_proxy" >Edizioni, licenze e architettura consigliata (app, database, reverse proxy)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Scegliere_il_metodo_di_installazione_decision_tree_rapido_Docker_Compose_Docker_Kubernetes_Cloud_Run_bare-metal" >Scegliere il metodo di installazione: decision tree rapido (Docker Compose, Docker, Kubernetes, Cloud Run, bare-metal)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Quickstart_production_con_Docker_Compose_su_VPS_DigitalOceanHetznerAWS_prerequisiti_e_passi_essenziali" >Quickstart production con Docker Compose su VPS (DigitalOcean/Hetzner/AWS): prerequisiti e passi essenziali</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Configurazione_produzione_dominio_reverse_proxy_NginxTraefik_HTTPS_con_Lets_Encrypt_e_variabili_dambiente_chiave" >Configurazione produzione: dominio, reverse proxy (Nginx/Traefik), HTTPS con Let’s Encrypt e variabili d’ambiente chiave</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#Dati_persistenti_backup_e_aggiornamenti_senza_downtime_PostgreSQL_volumi_migrazioni" >Dati persistenti, backup e aggiornamenti senza downtime (PostgreSQL, volumi, migrazioni)</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Performance_e_scalabilita_queue_mode_workers_programmazione_dei_job_risorse_e_tuning" >Performance e scalabilità: queue mode, workers, programmazione dei job, risorse e tuning</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#Sicurezza_e_conformita_hardening_server_autenticazione_access_control_audit_e_segreti" >Sicurezza e conformità: hardening server, autenticazione, access control, audit e segreti</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#Troubleshooting_e_FAQ_errori_comuni_502SSLWebhook_logging_monitoraggio_e_verifiche_post-deploy" >Troubleshooting e FAQ: errori comuni (502/SSL/Webhook), logging, monitoraggio e verifiche post-deploy</a></li></ul></li></ul></nav></div>
+<h1 id="n8nselfhostingguidacompletaeaggiornataperundeploysicuroescalabile"><span class="ez-toc-section" id="n8n_self_hosting_guida_completa_e_aggiornata_per_un_deploy_sicuro_e_scalabile"></span>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile<span class="ez-toc-section-end"></span></h1>
+<p>Sfruttare al massimo le potenzialità di n8n significa spesso prendere il pieno controllo della propria infrastruttura. Sebbene n8n Cloud offra una soluzione rapida, l&#8217;opzione <strong>n8n self hosting</strong> sblocca un livello superiore di personalizzazione, sovranità sui dati e ottimizzazione dei costi a lungo termine. Tuttavia, avviare un deploy di produzione può sembrare un&#8217;impresa ricca di incognite: quale metodo scegliere? Come garantire sicurezza e scalabilità? In questa guida completa, ti accompagneremo passo dopo passo nel processo. Partiremo dalle basi, come l&#8217;installazione tramite <strong>n8n docker compose</strong>, per poi passare alla configurazione di un ambiente production-ready con un <strong>reverse proxy Nginx</strong> e Let&#8217;s Encrypt, l&#8217;uso di un <strong>database Postgres</strong> dedicato e la gestione delle <strong>environment variables</strong>. Affronteremo anche temi avanzati come il <strong>queue mode</strong> per la scalabilità e le best practice per la sicurezza, l&#8217;aggiornamento e il backup della tua istanza.</p><div class="aiai-foundational">&#128218; <strong>Nuovo a n8n?</strong> Parti dalla <a href="https://aiautomationitalia.com/guida-n8n-completa-2025/">guida completa: cos&#39;&egrave; n8n e come funziona</a>.</div>
+<h2 id="perchselfhostaren8ncasidusovantaggilimitierequisiti"><span class="ez-toc-section" id="Perche_self-hostare_n8n_casi_duso_vantaggi_limiti_e_requisiti"></span>Perché self-hostare n8n: casi d’uso, vantaggi, limiti e requisiti<span class="ez-toc-section-end"></span></h2>
+<p>La scelta tra <a href="https://aiautomationitalia.com/n8n-cloud-vs-self-hosted-quale-scegliere-per-iniziare/">n8n Cloud e il self-hosting</a> non è solo tecnica, ma strategica. Sebbene la soluzione gestita offra un avvio immediato, il <strong>n8n self hosting</strong> si rivela la scelta vincente per aziende e professionisti che desiderano il massimo controllo. I casi d&#8217;uso ideali includono l&#8217;automazione di processi che trattano dati sensibili (sanitari, finanziari), l&#8217;integrazione con sistemi interni non esposti su internet e la gestione di un volume molto elevato di esecuzioni, dove i costi del cloud potrebbero scalare rapidamente.</p>
+<p><figure class="wp-block-image alignnone"><img decoding="async" src="https://i.ibb.co/CKPMf5f5/file.png" alt="A secure server rack symbolizing data sovereignty with n8n self-hosting." style="max-width:100%; height:auto; display:block; margin:0 auto;" title="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 2"><figcaption>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 6</figcaption></figure>
+</p>
+<h3 id="ivantaggiprincipalidelselfhosting">I vantaggi principali del self-hosting</h3>
+<p>Prendere in mano la propria istanza n8n offre benefici tangibili:</p>
+<ul>
+<li><strong>Sovranità e Sicurezza dei Dati</strong>: I tuoi dati, le credenziali e i log di esecuzione risiedono sulla tua infrastruttura, che sia un server on-premise o un VPS su provider come <strong>n8n DigitalOcean Hetzner</strong> o altri. Questo garantisce la piena conformità al GDPR e ti dà il controllo totale sulle policy di accesso e <strong>n8n security hardening</strong>.</li>
+<li><strong>Personalizzazione Senza Limiti</strong>: Puoi installare <a href="https://aiautomationitalia.com/come-costruire-e-pubblicare-un-community-node-sul-marketplace-di-n8n/">nodi custom</a>, modificare il codice sorgente (rispettando la licenza), accedere direttamente al database (<strong>n8n postgres database</strong>) per analisi avanzate e configurare l&#8217;ambiente esattamente secondo le tue necessità, senza le restrizioni di una piattaforma multi-tenant.</li>
+<li><strong>Ottimizzazione dei Costi a lungo termine</strong>: Sebbene richieda un investimento iniziale in termini di tempo e risorse, il self-hosting può risultare significativamente più economico sul lungo periodo, specialmente per carichi di lavoro intensivi. Paghi le risorse dell&#8217;infrastruttura, non per singola esecuzione.</li>
+</ul>
+<h3 id="limitiesfidedaconsiderare">Limiti e sfide da considerare</h3>
+<p>Il controllo totale comporta anche responsabilità totali:</p>
+<ul>
+<li><strong>Gestione dell&#8217;Infrastruttura</strong>: Sei tu il responsabile del setup, della manutenzione, degli aggiornamenti (<strong>n8n update upgrade</strong>) e delle procedure di <strong>n8n backup restore</strong>. Richiede competenze tecniche per gestire il server e i servizi associati.</li>
+<li><strong>Competenze Tecniche Richieste</strong>: Un deploy di produzione richiede familiarità con la riga di comando Linux, Docker e, idealmente, con concetti di networking come i reverse proxy. Sebbene l&#8217;approccio con <strong>n8n docker compose</strong> semplifichi l&#8217;avvio, la <strong>configurazione n8n production con Nginx e LetsEncrypt</strong> richiede un know-how specifico.</li>
+<li><strong>Scalabilità e Disponibilità</strong>: Garantire che l&#8217;istanza sia sempre attiva e performante è un tuo compito. Per carichi di lavoro importanti, dovrai pianificare strategie di scalabilità, ad esempio implementando il <a href="https://aiautomationitalia.com/scalare-n8n-guida-alla-modalita-queue-e-ai-processi-worker/">n8n queue mode</a> con worker dedicati.</li>
+</ul>
+<h3 id="requisitiminimieraccomandati">Requisiti minimi e raccomandati</h3>
+<p>Per iniziare, ecco di cosa avrai bisogno:</p>
+<ul>
+<li><strong>Hardware</strong>: Come minimo, un&#8217;istanza con 1 vCPU, 2 GB di RAM e 20 GB di disco. Per un ambiente di produzione stabile, sono raccomandati almeno <strong>2 vCPU, 4 GB di RAM e 40 GB di spazio disco</strong>.</li>
+<li><strong>Software</strong>: Un sistema operativo Linux (es. Ubuntu 22.04), Docker e Docker Compose installati.</li>
+<li><strong>Competenze</strong>: Conoscenza di base della shell Linux e dei comandi Docker. Per la produzione, sono necessarie competenze su networking, sicurezza e gestione di database.</li>
+</ul>
+<h2 id="edizionilicenzeearchitetturaconsigliataappdatabasereverseproxy"><span class="ez-toc-section" id="Edizioni_licenze_e_architettura_consigliata_app_database_reverse_proxy"></span>Edizioni, licenze e architettura consigliata (app, database, reverse proxy)<span class="ez-toc-section-end"></span></h2>
+<p>Prima di avviare il terminale, è fondamentale comprendere il panorama delle licenze e l&#8217;architettura su cui poggerà la nostra installazione. Per il <strong>n8n self hosting</strong>, la versione di riferimento è la <strong>Community Edition</strong>. Questa edizione è gratuita e incredibilmente potente, ma opera sotto una licenza &#8220;source-available&#8221; (Sustainable Use License), non strettamente open-source. In sintesi, puoi usarla, modificarla e distribuirla liberamente, ma non puoi offrire un servizio commerciale concorrente a quello di n8n Cloud utilizzando il loro software. Per esigenze aziendali avanzate come SSO e user management granulare, esistono le versioni Pro ed Enterprise, ma la Community Edition è il punto di partenza per la maggior parte degli use case di self-hosting.</p>
+<p>L&#8217;architettura ideale per un ambiente di produzione non si limita al solo servizio n8n. Per garantire stabilità, sicurezza e persistenza dei dati, la configurazione consigliata si basa su tre pilastri, orchestrati tramite <strong>n8n docker compose</strong>:</p>
+<ol>
+<li>
+<p><strong>L&#8217;applicazione n8n (il Motore)</strong>: È il container Docker che esegue l&#8217;applicazione principale di n8n. Non dovrebbe mai essere esposto direttamente su Internet.</p>
+</li>
+<li>
+<p><strong>Un Database Persistente (la Memoria)</strong>: Di default, n8n utilizza un database SQLite. Sebbene comodo per i test, è inadatto alla produzione. La scelta standard e raccomandata è un database <strong>n8n postgres database</strong> dedicato. PostgreSQL offre robustezza, performance superiori in caso di accessi concorrenti e procedure di backup/restore molto più affidabili. L&#8217;uso di un volume Docker è obbligatorio per garantire che i tuoi workflow, le credenziali e lo storico delle esecuzioni sopravvivano al riavvio del container.</p>
+</li>
+<li>
+<p><strong>Un Reverse Proxy (la Facciata Sicura)</strong>: Questo componente è il guardiano della tua istanza. Un reverse proxy come <strong>Nginx</strong> o <strong>Traefik</strong> si posiziona di fronte a n8n, gestendo tutto il traffico in entrata. I suoi compiti sono cruciali: termina la connessione SSL/TLS (gestendo i certificati di Let&#8217;s Encrypt), instrada le richieste dal tuo dominio (es. <code>n8n.tuo-sito.com</code>) alla porta interna del container n8n e permette di aggiungere un ulteriore strato di sicurezza. La configurazione di un <strong>n8n reverse proxy nginx</strong> è un classico, mentre soluzioni come <strong>traefik letsencrypt n8n</strong> offrono un&#8217;automazione eccezionale, soprattutto in ambienti basati su Docker.</p>
+</li>
+</ol>
+<h2 id="scegliereilmetododiinstallazionedecisiontreerapidodockercomposedockerkubernetescloudrunbaremetal"><span class="ez-toc-section" id="Scegliere_il_metodo_di_installazione_decision_tree_rapido_Docker_Compose_Docker_Kubernetes_Cloud_Run_bare-metal"></span>Scegliere il metodo di installazione: decision tree rapido (Docker Compose, Docker, Kubernetes, Cloud Run, bare-metal)<span class="ez-toc-section-end"></span></h2>
+<p>Una volta definita l&#8217;architettura, il passo successivo è decidere <em>come</em> installare n8n. La scelta del metodo giusto è cruciale e dipende dalle tue competenze, dall&#8217;infrastruttura a disposizione e dagli obiettivi di scalabilità. Non esiste una risposta unica, ma un albero decisionale può guidarti verso la soluzione più adatta al tuo scenario di <strong>n8n self hosting</strong>.</p>
+<p><figure class="wp-block-image alignnone"><img decoding="async" src="https://i.ibb.co/0VfcNpYH/file.png" alt="A holographic flowchart showing different deployment paths for n8n." style="max-width:100%; height:auto; display:block; margin:0 auto;" title="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 3"><figcaption>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 7</figcaption></figure>
+</p>
+<h3 id="ilmetodoconsigliatodockercompose">Il metodo consigliato: Docker Compose</h3>
+<p><strong>Se parti da zero, gestisci un singolo server o cerchi il miglior equilibrio tra semplicità e potenza, la risposta è quasi sempre Docker Compose.</strong> Questo approccio, che vedremo in dettaglio, è lo standard de-facto per la maggior parte dei deploy. Permette di definire e avviare l&#8217;intera architettura a tre componenti (applicazione, database, reverse proxy) con un singolo file di configurazione (<code>docker-compose.yml</code>) e un comando. È la via maestra per <strong>come self hostare n8n con docker compose</strong> in modo pulito e riproducibile.</p>
+<ul>
+<li><strong>Ideale per</strong>: Principianti, sviluppatori, piccole e medie imprese, deploy su singolo VPS o server dedicato.</li>
+<li><strong>Pro</strong>: Semplicità di gestione, configurazione dichiarativa, ambiente isolato, facile da aggiornare.</li>
+<li><strong>Contro</strong>: Limitato a un singolo host, la scalabilità avanzata richiede soluzioni più complesse.</li>
+</ul>
+<h3 id="perlamassimascalabilitkubernetesconhelm">Per la massima scalabilità: Kubernetes (con Helm)</h3>
+<p><strong>Se operi in un ambiente enterprise, hai bisogno di alta disponibilità e scaling automatico, Kubernetes è la strada da percorrere.</strong> Questa piattaforma di orchestrazione di container è la soluzione definitiva per carichi di lavoro critici. Sebbene la complessità sia notevolmente superiore, abilita scenari avanzati come il <strong>n8n worker scaling</strong> dinamico per gestire migliaia di esecuzioni parallele in <strong>n8n queue mode</strong>. Il deploy è solitamente gestito tramite chart <strong>n8n kubernetes helm</strong>, che ne standardizzano l&#8217;installazione.</p>
+<ul>
+<li><strong>Ideale per</strong>: Grandi aziende, carichi di lavoro intensivi e imprevedibili, requisiti di high availability.</li>
+<li><strong>Pro</strong>: Resilienza ai guasti, scaling automatico, gestione efficiente di cluster multi-nodo.</li>
+<li><strong>Contro</strong>: Estremamente complesso, costi elevati di setup e gestione, overkill per la maggior parte degli use case.</li>
+</ul>
+<h3 id="lalternativaserverlesscloudrunawsfargateetc">L&#8217;alternativa Serverless: Cloud Run, AWS Fargate, etc.</h3>
+<p><strong>Se preferisci un approccio &#8220;managed&#8221; e vuoi pagare solo per il tempo di esecuzione, le piattaforme Serverless sono un&#8217;opzione moderna ed efficiente.</strong> Servizi come <strong>n8n google cloud run</strong> ti permettono di deployare il container di n8n senza gestire il server sottostante. La piattaforma si occupa di tutto. È un&#8217;ottima soluzione per carichi di lavoro sporadici, come la gestione di webhook.</p>
+<ul>
+<li><strong>Ideale per</strong>: Workload guidati da eventi (event-driven), ottimizzazione dei costi per utilizzi discontinui.</li>
+<li><strong>Pro</strong>: Pay-per-use, scalabilità gestita, nessuna gestione del server.</li>
+<li><strong>Contro</strong>: Configurazione di rete e storage persistente (DB) più complessa, possibile latenza iniziale (cold start).</li>
+</ul>
+<h3 id="perilcontrollototalebaremetalconnpm">Per il controllo totale: Bare-metal (con npm)</h3>
+<p><strong>Se desideri il controllo assoluto e rifiuti la containerizzazione, puoi installare n8n direttamente sul sistema operativo tramite <code>n8n npm install</code>.</strong> Questo ti dà accesso diretto ai file, ma ti rende l&#8217;unico responsabile di tutto il resto: installazione e aggiornamento di Node.js, configurazione di un servizio (es. systemd) per l&#8217;avvio automatico, e setup manuale di database e reverse proxy. È un&#8217;opzione per puristi e per scenari specifici in cui Docker non è un&#8217;opzione.</p>
+<ul>
+<li><strong>Ideale per</strong>: Esperti di sistema, ambienti con restrizioni sull&#8217;uso di Docker.</li>
+<li><strong>Pro</strong>: Nessun overhead da virtualizzazione, pieno controllo sull&#8217;ambiente.</li>
+<li><strong>Contro</strong>: Complessità manuale, gestione delle dipendenze, aggiornamenti e backup più rischiosi.</li>
+</ul>
+<h2 id="quickstartproductioncondockercomposesuvpsdigitaloceanhetznerawsprerequisitiepassiessenziali"><span class="ez-toc-section" id="Quickstart_production_con_Docker_Compose_su_VPS_DigitalOceanHetznerAWS_prerequisiti_e_passi_essenziali"></span>Quickstart production con Docker Compose su VPS (DigitalOcean/Hetzner/AWS): prerequisiti e passi essenziali<span class="ez-toc-section-end"></span></h2>
+<p>Ora che abbiamo definito l&#8217;architettura ideale, passiamo all&#8217;azione. Questa sezione è una guida pratica per lanciare un&#8217;istanza n8n production-ready in meno di 30 minuti, utilizzando il metodo più diffuso e bilanciato: <strong>n8n docker compose</strong>. Seguiremo l&#8217;approccio a tre componenti (applicazione, database, reverse proxy) su un Virtual Private Server (VPS), una scelta ottimale per costi e controllo. Le istruzioni sono valide per qualsiasi provider che offra VPS con accesso root, come le popolari opzioni <strong>n8n digitalocean hetzner</strong> o AWS EC2.</p>
+<h3 id="prerequisitilachecklistprimadiiniziare">Prerequisiti: la checklist prima di iniziare</h3>
+<p>Prima di scrivere una sola riga di codice, assicurati di avere questi quattro elementi pronti:</p>
+<ol>
+<li><strong>Un VPS con accesso root</strong>: Scegli un&#8217;istanza con almeno 2 vCPU, 4 GB di RAM e 40 GB di disco, con installato un sistema operativo Linux recente (consigliamo Ubuntu 22.04 LTS).</li>
+<li><strong>Un nome a dominio</strong>: Avrai bisogno di un dominio (es. <code>tuodominio.com</code>) per accedere a n8n in modo sicuro tramite HTTPS. In questa guida, useremo il sottodominio <code>n8n.tuodominio.com</code>.</li>
+<li><strong>Un record DNS configurato</strong>: Nel pannello di gestione DNS del tuo dominio, crea un record di tipo <code>A</code> che faccia puntare il sottodominio scelto (es. <code>n8n</code>) all&#8217;indirizzo IP pubblico del tuo VPS.</li>
+<li><strong>Docker e Docker Compose installati</strong>: Accedi al tuo server tramite SSH e assicurati che sia Docker che Docker Compose siano installati e funzionanti. Le guide ufficiali di Docker forniscono le istruzioni più aggiornate per l&#8217;installazione.</li>
+</ol>
+<h3 id="lastrutturadelprogettoprepararelambiente">La struttura del progetto: preparare l&#8217;ambiente</h3>
+<p>Una volta connesso al tuo VPS, crea una cartella dedicata per mantenere il progetto ordinato. Questo faciliterà enormemente la gestione futura, gli aggiornamenti e i backup.</p>
+<pre><code class="bash language-bash">mkdir n8n-produzione
+cd n8n-produzione
+</code></pre>
+<p>All&#8217;interno di questa cartella, creeremo due file fondamentali: <code>docker-compose.yml</code> e <code>.env</code>.</p>
+<h3 id="configurazionedellevariabilidambienteilfileenv">Configurazione delle variabili d&#8217;ambiente: il file .env</h3>
+<p>Per evitare di scrivere dati sensibili (come le password) direttamente nel file di configurazione, useremo un file <code>.env</code>. Questo file conterrà tutte le <a href="https://aiautomationitalia.com/variabili-dambiente-in-n8n-guida-per-lhosting-self-managed/">n8n environment variables</a> necessarie. Crea il file con il comando <code>nano .env</code> e incolla il seguente contenuto, personalizzandolo con i tuoi dati.</p>
+<pre><code class="env language-env"># --- Dati Generali ---
+# Fuso orario per schedulare correttamente i workflow. Lista: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+GENERIC_TIMEZONE=Europe/Rome
+
+# --- Dominio e URL per n8n ---
+# Inserisci il dominio completo che hai configurato con il record DNS
+SUBDOMAIN=n8n.tuodominio.com
+DOMAIN=tuodominio.com
+
+# --- Credenziali per il database Postgres ---
+# Usa password complesse e uniche
+POSTGRES_USER=n8nuser
+POSTGRES_PASSWORD=unaPasswordMoltoSicura123!
+POSTGRES_DB=n8n
+
+# --- Chiave di crittografia per n8n ---
+# FONDAMENTALE: Usata per crittografare le credenziali nel DB. Deve essere una stringa casuale di 32 caratteri.
+# Generala una volta e non cambiarla MAI PIÙ, altrimenti perderai l'accesso a tutte le tue credenziali salvate.
+N8N_ENCRYPTION_KEY=laTuaChiaveDiCifraturaSegretaDi32Caratteri
+</code></pre>
+<p><strong>Attenzione</strong>: La variabile <code>N8N_ENCRYPTION_KEY</code> è la più importante. Se la perdi o la modifichi, le credenziali dei tuoi workflow diventeranno illeggibili. Salva questo valore in un posto sicuro.</p>
+<h3 id="ilfiledockercomposeymlperlaproduzione">Il file <code>docker-compose.yml</code> per la produzione</h3>
+<p>Questo è il cuore del nostro setup <strong>come self hostare n8n con docker compose</strong>. Crea il file <code>nano docker-compose.yml</code> e incolla questa configurazione. Abbiamo scelto un approccio che automatizza la <strong>configurazione n8n production con Nginx e LetsEncrypt</strong> utilizzando un&#8217;immagine Docker specializzata, rendendo il setup incredibilmente più semplice.</p>
+<pre><code class="yaml language-yaml">version: '3.7'
+
+services:
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      - N8N_HOST=${SUBDOMAIN}
+
+  n8n:
+    image: n8nio/n8n
+    restart: unless-stopped
+    environment:
+      - N8N_HOST=${SUBDOMAIN}
+      - N8N_PROTOCOL=https
+      - NODE_ENV=production
+      - WEBHOOK_URL=https://${SUBDOMAIN}/
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=${POSTGRES_DB}
+      - DB_POSTGRESDB_USER=${POSTGRES_USER}
+      - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD}
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
+      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
+    volumes:
+      - n8n_data:/home/node/.n8n
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:14
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  caddy_data:
+  caddy_config:
+  n8n_data:
+  postgres_data:
+</code></pre>
+<p>Prima di avviare, crea un ultimo file per la configurazione del reverse proxy Caddy (un&#8217;alternativa moderna e automatica a Nginx):</p>
+<pre><code class="bash language-bash">nano Caddyfile
+</code></pre>
+<p>Incolla questo contenuto nel file <code>Caddyfile</code>:</p>
+<pre><code>{$N8N_HOST} {
+    reverse_proxy n8n:5678
+}
+</code></pre>
+<p>Questo file istruisce Caddy su come instradare il traffico dal tuo dominio all&#8217;applicazione n8n, gestendo automaticamente la generazione e il rinnovo dei certificati SSL/TLS.</p>
+<h3 id="avvioeprimoaccesso">Avvio e primo accesso</h3>
+<p>Ora sei pronto a dare vita alla tua istanza n8n. Esegui un singolo comando dalla cartella <code>n8n-produzione</code>:</p>
+<pre><code class="bash language-bash">docker compose up -d
+</code></pre>
+<p>Docker scaricherà le immagini e avvierà i tre container in background. Il processo potrebbe richiedere qualche minuto. Puoi monitorare i log per assicurarti che tutto proceda correttamente, specialmente la creazione del certificato SSL:</p>
+<pre><code class="bash language-bash">docker compose logs -f caddy
+</code></pre>
+<p>Una volta che vedi messaggi di successo, apri il tuo browser e naviga su <code>https://n8n.tuodominio.com</code>. Ti verrà presentata la schermata di setup iniziale di n8n, dove potrai creare il tuo account amministratore. </p>
+<p>Congratulazioni! Hai appena completato con successo il deploy di una tua istanza <strong>n8n self hosting</strong>, sicura, persistente e pronta per la produzione, utilizzando un <strong>n8n postgres database</strong> e un reverse proxy automatizzato.</p>
+<h2 id="configurazioneproduzionedominioreverseproxynginxtraefikhttpsconletsencryptevariabilidambientechiave"><span class="ez-toc-section" id="Configurazione_produzione_dominio_reverse_proxy_NginxTraefik_HTTPS_con_Lets_Encrypt_e_variabili_dambiente_chiave"></span>Configurazione produzione: dominio, reverse proxy (Nginx/Traefik), HTTPS con Let’s Encrypt e variabili d’ambiente chiave<span class="ez-toc-section-end"></span></h2>
+<p>Il quickstart precedente ci ha permesso di lanciare un&#8217;istanza n8n funzionante e sicura in pochi minuti grazie all&#8217;automazione di Caddy. Tuttavia, per un controllo più granulare o per integrarsi in un&#8217;infrastruttura esistente, è fondamentale padroneggiare la configurazione manuale di un reverse proxy. Questa è una pietra miliare per qualsiasi setup di <strong>n8n self hosting</strong> serio. In questa sezione, esploreremo le due soluzioni leader del settore, Nginx e Traefik, e approfondiremo le <strong>n8n environment variables</strong> cruciali per la sicurezza e la stabilità.</p>
+<p>Il reverse proxy è il guardiano digitale della tua istanza n8n. Si interpone tra Internet e la tua applicazione, svolgendo tre compiti vitali:</p>
+<ol>
+<li><strong>Terminazione SSL/TLS</strong>: Gestisce tutto il traffico HTTPS, decifrandolo e inoltrandolo in chiaro (ma in modo sicuro, sulla rete privata di Docker) a n8n. È responsabile della gestione dei certificati Let&#8217;s Encrypt.</li>
+<li><strong>Routing del Dominio</strong>: Indirizza le richieste in arrivo al tuo dominio (es. <code>n8n.tuodominio.com</code>) al container n8n corretto, che ascolta su una porta interna (es. <code>5678</code>).</li>
+<li><strong>Sicurezza e Caching</strong>: Nasconde la tua applicazione n8n dall&#8217;accesso diretto, permette di impostare regole di sicurezza aggiuntive (come rate limiting) e può servire asset statici per migliorare le performance.</li>
+</ol>
+<p><figure class="wp-block-image alignnone"><img decoding="async" src="https://i.ibb.co/MyNpHxPq/file.png" alt="A digital fortress representing a secure reverse proxy for n8n." style="max-width:100%; height:auto; display:block; margin:0 auto;" title="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 4"><figcaption>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 8</figcaption></figure>
+</p>
+<h3 id="opzione1configurazioneclassicaconnginxecertbot">Opzione 1: Configurazione classica con Nginx e Certbot</h3>
+<p>Nginx è lo standard de-facto, incredibilmente potente e flessibile. È la scelta ideale se hai già familiarità con la sua configurazione o se hai bisogno del massimo controllo. Questo approccio prevede di installare Nginx e Certbot (il client di Let&#8217;s Encrypt) direttamente sulla macchina host (il tuo VPS), fuori da Docker.</p>
+<p><strong>1. Modifica il <code>docker-compose.yml</code></strong>: A differenza del setup con Caddy, n8n non deve esporre la sua porta pubblicamente. Modifica il servizio <code>n8n</code> nel tuo file <code>docker-compose.yml</code> per esporre la porta solo all&#8217;host locale:</p>
+<pre><code class="yaml language-yaml"># Esempio di modifica per il servizio n8n in docker-compose.yml
+services:
+  n8n:
+    # ... (altre configurazioni)
+    ports:
+      - "127.0.0.1:5678:5678"
+    # ... (il resto rimane invariato)
+</code></pre>
+<p><strong>2. Installa Nginx e Certbot</strong>:</p>
+<pre><code class="bash language-bash">sudo apt update
+sudo apt install nginx certbot python3-certbot-nginx
+</code></pre>
+<p><strong>3. Crea il file di configurazione per Nginx</strong>:<br />
+Crea un nuovo file di configurazione, ad esempio <code>sudo nano /etc/nginx/sites-available/n8n.conf</code>, e incolla questo template. Questa è una <strong>configurazione n8n production con Nginx e LetsEncrypt</strong> di base.</p>
+<pre><code class="nginx language-nginx">server {
+    listen 80;
+    server_name n8n.tuodominio.com;
+
+    location / {
+        proxy_pass http://localhost:5678;
+        proxy_set_header Connection '';
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_buffering off;
+        proxy_request_buffering off;
+    }
+}
+</code></pre>
+<p>Abilita il sito e testa la configurazione:</p>
+<pre><code class="bash language-bash">sudo ln -s /etc/nginx/sites-available/n8n.conf /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+</code></pre>
+<p><strong>4. Ottieni il certificato SSL</strong>:<br />
+Esegui Certbot, che troverà la tua configurazione e ti guiderà per abilitare HTTPS.</p>
+<pre><code class="bash language-bash">sudo certbot --nginx -d n8n.tuodominio.com
+</code></pre>
+<p>Certbot modificherà automaticamente il tuo file di configurazione Nginx e imposterà il rinnovo automatico. Hai appena configurato un <strong>n8n reverse proxy nginx</strong> production-ready.</p>
+<h3 id="opzione2automazionedockernativecontraefik">Opzione 2: Automazione &#8220;Docker-native&#8221; con Traefik</h3>
+<p>Traefik è un reverse proxy moderno progettato per ambienti dinamici come Docker. La sua killer feature è l&#8217;auto-discovery: monitora i container in esecuzione e si configura automaticamente tramite etichette (<code>labels</code>) definite nel <code>docker-compose.yml</code>. Questa è la soluzione più elegante per chi vuole un setup <strong>traefik letsencrypt n8n</strong> completamente automatizzato.</p>
+<p>Ecco come apparirebbe un <code>docker-compose.yml</code> che include Traefik:</p>
+<pre><code class="yaml language-yaml">version: '3.7'
+
+services:
+  traefik:
+    image: traefik:v2.9
+    restart: unless-stopped
+    command:
+      - "--api.insecure=true" # Solo per debug, disabilitare in produzione
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.email=tua-email@dominio.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080" # Dashboard di Traefik (opzionale)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - traefik_data:/letsencrypt
+
+  n8n:
+    image: n8nio/n8n
+    restart: unless-stopped
+    environment:
+      # ... (stesse variabili d'ambiente di prima)
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.n8n.rule=Host(`n8n.tuodominio.com`)"
+      - "traefik.http.routers.n8n.entrypoints=websecure"
+      - "traefik.http.routers.n8n.tls.certresolver=myresolver"
+      - "traefik.http.services.n8n.loadbalancer.server.port=5678"
+
+  # ... (servizio postgres)
+
+volumes:
+  traefik_data:
+  # ... (altri volumi)
+</code></pre>
+<p>Con un <code>docker-compose up -d</code>, Traefik rileverà <code>n8n</code> grazie alle sue etichette, richiederà un certificato a Let&#8217;s Encrypt e inizierà a instradare il traffico HTTPS, tutto senza file di configurazione esterni.</p>
+<h3 id="variabilidambienteessenziali">Variabili d&#8217;Ambiente Essenziali</h3>
+<p>Indipendentemente dal reverse proxy, una configurazione robusta dipende da queste <strong>n8n environment variables</strong>:</p>
+<p>| Variabile | Esempio | Spiegazione | Criticità |<br />
+| :&#8212; | :&#8212; | :&#8212; | :&#8212; |<br />
+| <code>N8N_ENCRYPTION_KEY</code> | <code>stringaCasualeUnicaDi32Caratteri</code> | <strong>FONDAMENTALE</strong>. Crittografa le credenziali nel database. Se persa, le credenziali sono irrecuperabili. | Altissima |<br />
+| <code>WEBHOOK_URL</code> | <code>https://n8n.tuodominio.com/</code> | Indica a n8n l&#8217;URL pubblico corretto. Indispensabile per il corretto funzionamento dei webhook. | Altissima |<br />
+| <code>GENERIC_TIMEZONE</code>| <code>Europe/Rome</code> | Assicura che i workflow schedulati si attivino all&#8217;ora corretta. | Alta |<br />
+| <code>DB_TYPE</code> | <code>postgresdb</code> | Specifica di usare un database esterno. Impostare su <code>postgresdb</code> per usare un <strong>n8n postgres database</strong>. | Alta |<br />
+| <code>DB_POSTGRESDB_*</code> | (user, password, etc) | Credenziali per la connessione al database PostgreSQL. | Alta |<br />
+| <code>N8N_BASIC_AUTH_ACTIVE</code> | <code>true</code> | Abilita un ulteriore livello di autenticazione base (username/password) prima di accedere all&#8217;interfaccia di n8n. | Media (Sicurezza) |<br />
+| <code>N8N_BASIC_AUTH_USER</code> | <code>admin</code> | Username per l&#8217;autenticazione base. | Media (Sicurezza) |<br />
+| <code>N8N_BASIC_AUTH_PASSWORD</code> | <code>unaPasswordRobusta</code> | Password per l&#8217;autenticazione base. Utile per una rapida <strong>n8n security hardening</strong>. | Media (Sicurezza) |<br />
+| <code>EXECUTIONS_DATA_PRUNE</code> | <code>true</code> | Abilita la pulizia automatica dei dati delle vecchie esecuzioni. | Media (Performance) |<br />
+| <code>EXECUTIONS_DATA_MAX_AGE</code> | <code>30</code> | Numero di giorni dopo cui i dati delle esecuzioni vengono eliminati (se <code>PRUNE</code> è attivo). Aiuta a mantenere il database snello. | Media (Performance) |</p>
+<h2 id="datipersistentibackupeaggiornamentisenzadowntimepostgresqlvolumimigrazioni"><span class="ez-toc-section" id="Dati_persistenti_backup_e_aggiornamenti_senza_downtime_PostgreSQL_volumi_migrazioni"></span>Dati persistenti, backup e aggiornamenti senza downtime (PostgreSQL, volumi, migrazioni)<span class="ez-toc-section-end"></span></h2>
+<p>Avere un&#8217;istanza n8n funzionante è solo il primo passo. La vera sfida di un ambiente di produzione è garantirne l&#8217;affidabilità e la longevità nel tempo. Questo si traduce in tre attività fondamentali: assicurare la persistenza dei dati, implementare una strategia di backup solida e gestire gli aggiornamenti in modo sicuro. Fortunatamente, l&#8217;architettura con Docker e un <strong>n8n postgres database</strong> che abbiamo costruito rende queste operazioni molto più semplici di quanto si possa pensare.</p>
+<p>I nostri workflow, le credenziali e i log di esecuzione sono il cuore pulsante dell&#8217;automazione. Perderli equivarrebbe a un disastro. La nostra configurazione <code>docker-compose.yml</code> garantisce la persistenza tramite due volumi Docker nominati, che agiscono come dischi virtuali indistruttibili per i nostri container:</p>
+<ul>
+<li><code>postgres_data</code>: È il volume più critico. Contiene l&#8217;intero database PostgreSQL. Finché questo volume esiste, tutti i tuoi workflow, le credenziali (crittografate) e lo storico delle esecuzioni sono al sicuro, anche se il container viene eliminato e ricreato.</li>
+<li><code>n8n_data</code>: Questo volume memorizza i file di configurazione locali di n8n e i nodi custom. È meno critico del database, ma comunque importante da preservare.</li>
+</ul>
+<h3 id="strategiedibackupefficacin8nbackuprestore">Strategie di Backup Efficaci: <code>n8n backup restore</code></h3>
+<p>Una strategia di <strong>n8n backup restore</strong> non è opzionale, è un&#8217;assicurazione. Ecco come implementarla in modo efficace:</p>
+<ol>
+<li>
+<p><strong>Backup del Database (Obbligatorio)</strong>: Il backup più importante è quello del database PostgreSQL. Puoi automatizzare questo processo con un semplice comando da eseguire periodicamente (es. tramite un cron job). Dalla cartella del tuo progetto, assicurati prima di creare una sottocartella <code>backups</code> (<code>mkdir backups</code>), poi esegui:</p>
+<pre><code class="bash language-bash">docker compose exec -T postgres pg_dump -U ${POSTGRES_USER} -d ${POSTGRES_DB} | gzip &gt; ./backups/n8n_db_backup_$(date +%F).sql.gz
+</code></pre>
+<p>Questo comando esegue <code>pg_dump</code> all&#8217;interno del container di Postgres, crea un dump completo del database e lo salva compresso nella cartella <code>backups</code> con la data odierna nel nome.</p>
+</li>
+<li>
+<p><strong>Backup del Volume Dati n8n (Consigliato)</strong>: Per una sicurezza totale, è buona norma backuppare anche il volume <code>n8n_data</code>, specialmente se hai installato dei community nodes. Il processo è più complesso poiché richiede di interagire con i volumi Docker, ma il backup del database rimane la priorità assoluta.</p>
+</li>
+</ol>
+<p>Il ripristino, da testare periodicamente, è il processo inverso: si importa il file <code>.sql</code> in un&#8217;istanza pulita di PostgreSQL.</p>
+<h3 id="aggiornaren8ninsicurezzan8nupdateupgrade">Aggiornare n8n in Sicurezza: <code>n8n update upgrade</code></h3>
+<p>Mantenere n8n aggiornato è fondamentale per la sicurezza e per accedere a nuove funzionalità. Con Docker Compose, il processo di <strong>n8n update upgrade</strong> è sorprendentemente semplice e sicuro, con un downtime minimo.</p>
+<ol>
+<li><strong>Tira l&#8217;ultima versione dell&#8217;immagine</strong>:<br />
+<code>bash<br />
+docker compose pull n8n<br />
+</code></li>
+<li><strong>Riavvia i servizi per applicare l&#8217;aggiornamento</strong>:<br />
+<code>bash<br />
+docker compose up -d<br />
+</code></li>
+</ol>
+<p>Docker noterà che l&#8217;immagine <code>n8n</code> locale è più vecchia di quella appena scaricata, quindi fermerà il vecchio container e ne avvierà uno nuovo basato sull&#8217;ultima versione, ricollegando automaticamente i volumi <code>n8n_data</code> e <code>postgres_data</code>. Il downtime per questa operazione è di solito di pochi secondi, più che accettabile per la maggior parte delle aziende.</p>
+<p><strong>E le migrazioni del database?</strong> n8n gestisce tutto in automatico. Al primo avvio, la nuova versione dell&#8217;applicazione rileverà lo stato del database e applicherà tutte le modifiche necessarie allo schema. <strong>Attenzione</strong>: per questo motivo, non tentare mai di downgradare una versione di n8n, poiché le migrazioni del database non sono progettate per essere reversibili e potresti corrompere i dati. Per un&#8217;assenza totale di downtime, sono necessarie architetture più complesse come quelle basate su <strong>n8n kubernetes helm</strong>.</p>
+<p>Gestire correttamente questi tre aspetti trasforma il tuo progetto di <strong>n8n self hosting</strong> da un semplice esperimento a una piattaforma di automazione robusta e professionale.</p>
+<h2 id="performanceescalabilitqueuemodeworkershttpsaiautomationitaliacomglossarion8ntuttiiterminidaconoscereperlavorareconn8nprogrammazionedeijobrisorseetuning"><span class="ez-toc-section" id="Performance_e_scalabilita_queue_mode_workers_programmazione_dei_job_risorse_e_tuning"></span>Performance e scalabilità: queue mode, <a href="https://aiautomationitalia.com/glossario-n8n-tutti-i-termini-da-conoscere-per-lavorare-con-n8n/">workers</a>, programmazione dei job, risorse e tuning<span class="ez-toc-section-end"></span></h2>
+<p>Quando la tua istanza <strong>n8n self hosting</strong> passa da poche esecuzioni giornaliere a gestire centinaia di webhook al minuto o workflow che durano ore, il modello di esecuzione standard (chiamato <code>main</code>) inizia a mostrare i suoi limiti. In questa modalità, l&#8217;interfaccia utente, il processo di scheduling e l&#8217;esecuzione dei workflow condividono lo stesso thread. Un&#8217;esecuzione lunga o un picco di carico può rendere l&#8217;interfaccia lenta o addirittura bloccarla. Per superare questo ostacolo e costruire una piattaforma di automazione veramente enterprise-ready, la risposta è il <strong>n8n queue mode</strong>.</p>
+<p>Questa modalità avanzata trasforma l&#8217;architettura di n8n. L&#8217;istanza principale smette di eseguire direttamente i workflow; il suo unico compito diventa gestire l&#8217;interfaccia utente e aggiungere i job a una coda (solitamente gestita da un servizio come Redis). A questo punto entrano in gioco i <strong>workers</strong>: processi separati il cui unico scopo è prelevare i job dalla coda ed eseguirli. Questo disaccoppiamento è la chiave per la scalabilità: l&#8217;interfaccia rimane scattante indipendentemente dal carico e puoi aumentare la capacità di esecuzione semplicemente aggiungendo più workers. </p>
+<p><figure class="wp-block-image alignnone"><img decoding="async" src="https://i.ibb.co/B5F1tSgN/file.png" alt="Robotic arms working in parallel, symbolizing n8n&#039;s scalable queue mode." style="max-width:100%; height:auto; display:block; margin:0 auto;" title="n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 5"><figcaption>n8n self hosting: guida completa e aggiornata per un deploy sicuro e scalabile 9</figcaption></figure>
+</p>
+<p>L&#8217;implementazione richiede di modificare il <code>docker-compose.yml</code> per includere un servizio Redis e aggiungere un nuovo servizio <code>worker</code> che usa la stessa immagine di n8n ma con il comando <code>n8n worker</code>. Tramite le variabili d&#8217;ambiente (<code>EXECUTIONS_MODE=queue</code>, <code>QUEUE_BULL_REDIS_HOST=redis</code>), si istruisce n8n a operare in questa modalità. Il vero <strong>n8n worker scaling</strong> si ottiene con un semplice comando come <code>docker-compose up -d --scale worker=5</code>, che avvia 5 processi di esecuzione in parallelo. Per un auto-scaling dinamico basato sul carico, la soluzione definitiva è l&#8217;orchestrazione tramite Kubernetes, gestita attraverso chart <strong>n8n kubernetes helm</strong>.</p>
+<p>Oltre all&#8217;architettura, ci sono altri accorgimenti per il tuning:</p>
+<ul>
+<li><strong>Ottimizzazione dei Job</strong>: Ove possibile, progetta workflow che processino dati in batch anziché un elemento alla volta. Sfrutta le variabili <code>EXECUTIONS_DATA_PRUNE</code> e <code>EXECUTIONS_DATA_MAX_AGE</code> per mantenere il database delle esecuzioni snello e veloce.</li>
+<li><strong>Tuning delle Risorse</strong>: Monitora l&#8217;utilizzo di CPU e RAM del tuo host. Se i tuoi worker sono spesso al 100% di CPU, è il momento di assegnare più core alla tua VM. Un carico di lavoro elevato mette sotto forte stress anche il <strong>n8n postgres database</strong>. Un I/O del disco lento può diventare il collo di bottiglia; l&#8217;uso di dischi SSD/NVMe è quasi obbligatorio. L&#8217;ottimizzazione avanzata di PostgreSQL è un&#8217;arte in sé, ma garantisce che il cuore del tuo sistema non perda un colpo.</li>
+</ul>
+<h2 id="sicurezzaeconformithardeningserverautenticazioneaccesscontrolauditesegreti"><span class="ez-toc-section" id="Sicurezza_e_conformita_hardening_server_autenticazione_access_control_audit_e_segreti"></span>Sicurezza e conformità: hardening server, autenticazione, access control, audit e segreti<span class="ez-toc-section-end"></span></h2>
+<p>Avere un&#8217;istanza raggiungibile via HTTPS è solo la linea di partenza. Un approccio professionale al <strong>n8n self hosting</strong> richiede una strategia di sicurezza a più livelli, che va dal &#8220;ferro&#8221; del server fino alla gestione dei segreti all&#8217;interno dell&#8217;applicazione. Questo processo, noto come <strong>n8n security hardening</strong>, non è un&#8217;opzione, ma un requisito fondamentale per proteggere i tuoi dati, i workflow e garantire la conformità normativa come il GDPR.</p>
+<h3 id="livello1hardeningdelserverhostlafortezza">Livello 1: Hardening del Server Host (La Fortezza)</h3>
+<p>Il tuo VPS è la base su cui poggia tutto. Anche con la migliore configurazione di n8n, un server vulnerabile espone l&#8217;intero stack a rischi. Ecco le azioni essenziali:</p>
+<ul>
+<li><strong>Firewall</strong>: Adotta il principio del minimo privilegio. Configura un firewall (come UFW su Ubuntu) per bloccare tutto il traffico in entrata tranne quello indispensabile: SSH (solitamente porta 22), HTTP (porta 80) e HTTPS (porta 443). Questo impedisce scansioni e accessi non autorizzati ai servizi interni.</li>
+<li><strong>Accesso SSH Sicuro</strong>: Disabilita il login tramite password per l&#8217;utente root e, se possibile, per tutti gli utenti. Utilizza esclusivamente l&#8217;autenticazione tramite chiavi SSH, che è esponenzialmente più sicura. </li>
+<li><strong>Aggiornamenti Regolari</strong>: Le vulnerabilità software vengono scoperte continuamente. Imposta una routine (o automatizzala) per aggiornare regolarmente il sistema operativo e i pacchetti con <code>sudo apt update &amp;&amp; sudo apt upgrade</code>. Questo è uno dei passi più semplici ma efficaci per mantenere il server sicuro.</li>
+</ul>
+<h3 id="livello2controllodegliaccessiegestionedeisegretiinn8n">Livello 2: Controllo degli Accessi e Gestione dei Segreti in n8n</h3>
+<p>Una volta protetto il server, è il momento di mettere in sicurezza l&#8217;applicazione stessa.</p>
+<ul>
+<li><strong>Autenticazione e Accesso</strong>: L&#8217;edizione Community di n8n prevede un sistema di gestione utenti di base, dove configuri un proprietario dell&#8217;istanza. Per aggiungere un ulteriore, robusto strato di sicurezza, puoi attivare l&#8217;autenticazione base HTTP tramite <strong>n8n environment variables</strong> (<code>N8N_BASIC_AUTH_ACTIVE=true</code>, <code>N8N_BASIC_AUTH_USER</code> e <code>N8N_BASIC_AUTH_PASSWORD</code>). Questo richiederà un login aggiuntivo prima ancora di visualizzare l&#8217;interfaccia di n8n, proteggendola da sguardi indiscreti. Le versioni Enterprise, invece, offrono RBAC (Role-Based Access Control) avanzato e SSO.</li>
+<li><strong>Gestione Sicura dei Segreti</strong>: <strong>Non salvare mai chiavi API, token o password direttamente nei tuoi workflow.</strong> La pratica corretta è memorizzarli come credenziali crittografate o utilizzare espressioni che leggono le <strong>n8n environment variables</strong> caricate dal tuo file <code>.env</code>. Questo separa la configurazione (i segreti) dalla logica (il workflow), semplifica la rotazione delle chiavi e previene la loro esposizione accidentale se condividi il JSON del workflow. Per ambienti ancora più complessi, è possibile integrare n8n con strumenti di secret management dedicati come HashiCorp Vault.</li>
+</ul>
+<h3 id="livello3audittraileconformitgdpr">Livello 3: Audit Trail e Conformità GDPR</h3>
+<p>Uno dei maggiori vantaggi del self-hosting è la sovranità sui dati, un pilastro per la conformità al GDPR.</p>
+<ul>
+<li><strong>Audit Trail Completo</strong>: Ogni esecuzione di workflow viene registrata nel tuo <strong>n8n postgres database</strong>. Questo storico funge da audit trail dettagliato, mostrando quale workflow è stato eseguito, quando, con quali dati in ingresso (se abilitato) e con quale risultato. Questo è fondamentale per il debugging, il monitoraggio delle performance e per rispondere a eventuali richieste di conformità.</li>
+<li><strong>Controllo dei Dati</strong>: Con un&#8217;istanza self-hosted, sei tu a decidere dove risiedono i dati (es. in un datacenter europeo), per quanto tempo vengono conservati (usando le variabili <code>EXECUTIONS_DATA_PRUNE</code>) e chi può accedervi. Questo controllo diretto è un enorme vantaggio per dimostrare la conformità al GDPR, poiché hai piena visibilità e potere decisionale sull&#8217;intero ciclo di vita dei dati processati dalle tue automazioni.</li>
+</ul>
+<h2 id="troubleshootingefaqerroricomuni502sslwebhookloggingmonitoraggioeverifichepostdeploy"><span class="ez-toc-section" id="Troubleshooting_e_FAQ_errori_comuni_502SSLWebhook_logging_monitoraggio_e_verifiche_post-deploy"></span>Troubleshooting e FAQ: errori comuni (502/SSL/Webhook), logging, monitoraggio e verifiche post-deploy<span class="ez-toc-section-end"></span></h2>
+<p>Anche con un setup impeccabile, ogni istanza di <strong>n8n self hosting</strong> può incontrare qualche intoppo. Prima di farsi prendere dal panico, è fondamentale sapere dove guardare. Questa sezione è il tuo kit di primo soccorso per diagnosticare e risolvere i problemi più comuni, trasformandoti da semplice utente a gestore consapevole della tua piattaforma di automazione.</p>
+<h3 id="ilogituoimiglioriamiciperladiagnosi">I log: i tuoi migliori amici per la diagnosi</h3>
+<p>Quando qualcosa non va, la prima e più importante risorsa sono i log generati dai tuoi container. Docker Compose rende questa operazione semplicissima. Per avere una visione generale di cosa sta succedendo in tutti i servizi (n8n, database, reverse proxy), esegui questo comando dalla tua cartella di progetto:</p>
+<pre><code class="bash language-bash">docker compose logs -f
+</code></pre>
+<p>Se sospetti che il problema sia in un servizio specifico, puoi isolare i suoi log. Ad esempio, per vedere solo i log dell&#8217;applicazione n8n o del reverse proxy Caddy:</p>
+<pre><code class="bash language-bash">docker compose logs -f n8n
+# Oppure per il reverse proxy
+docker compose logs -f caddy
+</code></pre>
+<h3 id="erroricomuniesoluzionirapide">Errori Comuni e Soluzioni Rapide</h3>
+<ul>
+<li>
+<p><strong>Errore 502 Bad Gateway</strong>: Questo è l&#8217;errore più frequente. Significa che il tuo reverse proxy (Nginx, Traefik, Caddy) è attivo, ma non riesce a comunicare con il container di n8n.  </p>
+<ul>
+<li><strong>Soluzione</strong>: Controlla lo stato del container <code>n8n</code> con <code>docker compose ps</code>. Se non è in stato <code>Up</code>, controlla i suoi log (<code>docker compose logs -f n8n</code>) per messaggi di errore all&#8217;avvio (spesso legati a una configurazione errata delle variabili d&#8217;ambiente del database o della <code>N8N_ENCRYPTION_KEY</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Problemi con il certificato SSL (connessione non sicura)</strong>: Il tuo browser ti avvisa che il sito non è sicuro. Solitamente, significa che Let&#8217;s Encrypt non è riuscito a generare un certificato.</p>
+<ul>
+<li><strong>Soluzione</strong>: Controlla i log del tuo reverse proxy. Cerca errori relativi a &#8220;ACME&#8221; o &#8220;Let&#8217;s Encrypt&#8221;. Le cause più comuni sono: 1) il record DNS non punta ancora correttamente all&#8217;IP del server, o 2) il firewall del server sta bloccando il traffico sulle porte 80 e/o 443.</li>
+</ul>
+</li>
+<li>
+<p><strong>I Webhook non funzionano o vanno in timeout</strong>: Hai configurato un workflow con un trigger Webhook, ma le richieste non arrivano o falliscono. Questo è un problema tipico di <strong>n8n webhook configuration</strong>.</p>
+<ul>
+<li><strong>Soluzione</strong>: La causa al 99% è la variabile d&#8217;ambiente <code>WEBHOOK_URL</code>. Assicurati che nel tuo file <code>.env</code> sia impostata sull&#8217;URL pubblico completo della tua istanza, con lo slash finale (es. <code>WEBHOOK_URL=https://n8n.tuodominio.com/</code>). Senza questa informazione, n8n non sa come costruire gli URL per i suoi webhook.</li>
+</ul>
+</li>
+</ul>
+<h3 id="faqpostdeploy">FAQ Post-Deploy</h3>
+<ul>
+<li>
+<p><strong>Come posso aggiornare un singolo community node?</strong><br />
+Non è possibile farlo direttamente dall&#8217;interfaccia. L&#8217;approccio corretto richiede la creazione di un <code>Dockerfile</code> personalizzato che parta dall&#8217;immagine ufficiale di n8n e installi i nodi desiderati durante la build. È una pratica più avanzata ma essenziale per personalizzare l&#8217;istanza.</p>
+</li>
+<li>
+<p><strong>Posso passare da SQLite a PostgreSQL in un secondo momento?</strong><br />
+Tecnicamente sì, ma richiede una migrazione manuale dei dati, un processo complesso e soggetto a errori. La raccomandazione è categorica: inizia sempre un&#8217;installazione di produzione con un <strong>n8n postgres database</strong> dedicato fin dal primo giorno.</p>
+</li>
+<li>
+<p><strong>La mia istanza è diventata lenta, cosa posso fare?</strong><br />
+Monitora l&#8217;utilizzo di CPU e RAM del server. Se le risorse sono al limite, considera un upgrade del tuo VPS. Controlla le performance del database e assicurati di avere attivato il <code>PRUNE</code> dei vecchi dati di esecuzione. Se il carico è costantemente elevato, è il momento di implementare il <strong>n8n queue mode</strong>. Se dopo questi controlli le performance non migliorano, potrebbe servire una revisione dell&#8217;architettura. In AI Automation Italia, offriamo consulenze specifiche per ottimizzare le infrastrutture n8n, garantendo scalabilità e controllo dei costi (FinOps).</p>
+</li>
+</ul>
+<div class="aiai-related"><h3>Articoli correlati</h3><ul><li><a href="https://aiautomationitalia.com/automate-rpa-guida-completa-a-power-automate-e-alliperautomazione-per-le-aziende/">Automate RPA: Guida Completa a Power Automate e all&#8217;Iperautomazione per le Aziende</a></li><li><a href="https://aiautomationitalia.com/rpa-process-guida-completa-e-operativa-allautomazione-robotica/">RPA Process: Guida Completa e Operativa all&#8217;Automazione Robotica</a></li><li><a href="https://aiautomationitalia.com/rpa-robotica-guida-completa-a-benefici-costi-e-roadmap/">RPA Robotica: guida completa a benefici, costi e roadmap</a></li><li><a href="https://aiautomationitalia.com/automation-rpa-guida-completa-allautomazione-robotica-dei-processi/">Automation RPA: Guida Completa all&#8217;Automazione Robotica dei Processi</a></li></ul></div><div class="aiai-cta"><strong>Vuoi automazioni AI su misura per la tua azienda?</strong><br><a href="https://aiautomationitalia.com/consulenza/">Scopri la consulenza &rarr;</a></div></div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c4378f5b wp-block-group-is-layout-constrained">
+
+
+<hr class="wp-block-separator has-css-opacity is-style-wide"/>
+
+
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<div class="wp-block-group is-layout-flow wp-container-core-group-is-layout-f5bb311e wp-block-group-is-layout-flow">
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only is-content-justification-center is-layout-flex wp-container-core-social-links-is-layout-b20f1b96 wp-block-social-links-is-layout-flex"><li style="color: #0B0620; " class="wp-social-link wp-social-link-instagram has-foreground-color wp-block-social-link"><a href="https://www.instagram.com/aiautomationitalia/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+
+<li style="color: #0B0620; " class="wp-social-link wp-social-link-x has-foreground-color wp-block-social-link"><a href="https://x.com/aiautomationita" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" /></svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li></ul>
+
+
+<p style="font-style:normal;font-weight:400;" class="has-text-align-center wp-block-site-title has-medium-font-size"><a href="https://aiautomationitalia.com" target="_self" rel="home">AI Automation Italia</a></p></div>
+</div>
+</footer></div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/extendable\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Vai al contenuto';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="ez-toc-scroll-scriptjs-js-extra">
+var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":"","add_self_reference_link":""};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.76" id="ez-toc-scroll-scriptjs-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1" id="ez-toc-js-cookie-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2" id="ez-toc-jquery-sticky-kit-js"></script>
+<script id="ez-toc-js-js-extra">
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","scroll_offset":"30","fallbackIcon":"<span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>","chamomile_theme_is_on":""};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.76-1758542842" id="ez-toc-js-js"></script>
+<script id="extendable-navigation_customizations-js-extra">
+var ExtendableNavData = {"logoUrl":"https:\/\/aiautomationitalia.com\/wp-content\/uploads\/2025\/11\/AI-Automation-Italia-Logo-Cubi-000000-edited.png","siteTitle":"AI Automation Italia"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/themes/extendable/assets/js/navigation-customization.js" id="extendable-navigation_customizations-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/mailcheck.min.js?ver=2.3.2" id="mailcheck-js-js" defer data-wp-strategy="defer"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/jquery.email-autocomplete.min.js?ver=2.3.2" id="autocomplete-email-js-js" defer data-wp-strategy="defer"></script>
+<script id="mystickyelements-fronted-js-js-extra">
+var mystickyelements = {"ajaxurl":"https:\/\/aiautomationitalia.com\/wp-admin\/admin-ajax.php","ajax_nonce":"bfd6f07494"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/mystickyelements-fronted.min.js?ver=2.3.2" id="mystickyelements-fronted-js-js" defer data-wp-strategy="defer"></script>
+<script id="intl-tel-input-js-js-extra">
+var mystickyelement_obj = {"plugin_url":"https:\/\/aiautomationitalia.com\/wp-content\/plugins\/mystickyelements\/"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/intl-tel-input-src/build/js/intlTelInput.js?ver=2.3.2" id="intl-tel-input-js-js" defer data-wp-strategy="defer"></script>
+            <div                 class="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-large mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-sharp">
+				<div class="mystickyelement-lists-wrap">
+					<ul class="mystickyelements-lists mysticky">
+													<li class="mystickyelements-minimize ">
+								<span class="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style="background: #000000" >
+								&larr;								</span>
+							</li>
+						
+						
+							<li id="mystickyelements-contact-form" class="mystickyelements-contact-form  element-desktop-on element-mobile-on"   data-tab-opt="hover" data-time-delay="0" >
+																<span class="mystickyelements-social-icon "
+									  style="background-color: #ec7210; color: #FFFFFF;"><i
+										class="far fa-envelope"></i>Bisogno di aiuto?</span>
+																<div class="element-contact-form" style="background-color: #ffffff">
+																		<div class="contact-form-heading" style="color: #ec7210;background-color:#ffffff">
+										Contact Form										<span href="#" class="element-contact-close"><i class="fas fa-times"></i></span>
+									</div>
+
+									<form id="stickyelements-form" class="stickyelements-form" action="" method="post" autocomplete="off" data-close-after="">
+																					<label>
+												<span class="sr-only">Nome</span>
+												<input
+													class=""
+													type="text" id="contact-form-name" name="contact-form-name" value=""
+													placeholder="Nome"   autocomplete="off"/>
+											</label>
+																					<label>
+												<span class="sr-only">Telefono</span>
+												<input
+													class=" required"
+													type="tel" id="contact-form-phone" name="contact-form-phone" value="" oninput="this.value = this.value.replace(/[^0-9+]/g, '');"
+													placeholder="Telefono*"  required  autocomplete="off" />
+											</label>
+											<input type="hidden" id="phone_formate" value="0">
+																					<label>
+												<span class="sr-only">Email</span>
+												<input
+													class="email  required"
+													type="email" id="contact-form-email" name="contact-form-email" value=""
+													placeholder="Email*"  required  autocomplete="off"/>
+											</label>
+																					<label>
+												<span class="sr-only">Messaggio</span>
+												<textarea
+													class=""
+													id="contact-form-message" name="contact-form-message"
+													placeholder="Messaggio" ></textarea>
+											</label>
+																				<p class="mse-form-success-message" id="mse-form-error" style="display:none;"></p>
+										<input id="stickyelements-submit-form" type="submit" name="contact-form-submit"
+											   value="Invio"
+											   style="background-color: #ec7210;color:#FFFFFF;"/>
+																				<input type="hidden" name="nonce" value="6aaacc431326517895783076aaacc4313268">
+										<input type="hidden" name="form_id"
+											   value="86c04a5fbe">
+										<input type="hidden" id="stickyelements-page-link" name="stickyelements-page-link" value="https://aiautomationitalia.com/n8n-self-hosting-guida-completa-e-aggiornata-per-un-deploy-sicuro-e-scalabile/" />
+										
+									</form>
+								</div>
+							</li>
+														<li id="mystickyelements-social-insagram"
+									class="mystickyelements-social-icon-li mystickyelements- mystickyelements-social-insagram  element-desktop-on element-mobile-on">
+																			
+									<span class="mystickyelements-social-icon  social-insagram social-custom" data-tab-setting = 'hover' data-click = "0"data-mobile-behavior="disable" data-flyout="disable"
+										  >
+										
+																					<a class="social-link-insagram" href="https://www.instagram.com/aiautomationitalia/"   target="_blank" rel="noopener nofollow"  data-url="https://www.instagram.com/aiautomationitalia/" data-tab-setting = 'hover'  data-mobile-behavior="disable" data-flyout="disable" title="Instagram Page">
+																					<i class="fab fa-instagram" ></i>
+																					</a>
+																			</span>									
+																	<span class="mystickyelements-social-text " style= "" >
+																				<a class="social-link-insagram" href="https://www.instagram.com/aiautomationitalia/"   target="_blank" rel="noopener nofollow"   data-tab-setting = 'hover' data-flyout="disable" title="Instagram Page"
+										data-url="https://www.instagram.com/aiautomationitalia/"
+										
+										>
+																						Instagram Page																					</a>
+																		</span>
+																</li>
+															<li id="mystickyelements-social-twitter"
+									class="mystickyelements-social-icon-li mystickyelements- mystickyelements-social-twitter  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																				
+									<span class="mystickyelements-social-icon  social-twitter social-custom" data-tab-setting = 'hover' data-click = "0"data-mobile-behavior="disable" data-flyout="disable"
+										   style="background: #000000" >
+										
+																					<a class="social-link-twitter" href="https://x.com/aiautomationita"   target="_blank" rel="noopener nofollow"  data-url="https://x.com/aiautomationita" data-tab-setting = 'hover'  data-mobile-behavior="disable" data-flyout="disable" title="X">
+																					<i class="fa-brands fa-x-twitter" ></i>
+																					</a>
+																			</span>									
+																	<span class="mystickyelements-social-text " style= "background: #000000;" >
+																				<a class="social-link-twitter" href="https://x.com/aiautomationita"   target="_blank" rel="noopener nofollow"   data-tab-setting = 'hover' data-flyout="disable" title="X"
+										data-url="https://x.com/aiautomationita"
+										
+										>
+																						X																					</a>
+																		</span>
+																</li>
+												</ul>					
+				</div>
+            </div>
+		</body>
+</html>

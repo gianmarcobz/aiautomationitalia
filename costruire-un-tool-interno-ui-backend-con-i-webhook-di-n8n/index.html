@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="it-IT" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<style>								
+					form#stickyelements-form input::-moz-placeholder{
+						color: #4F4F4F;
+					} 
+					form#stickyelements-form input::-ms-input-placeholder{
+						color: #4F4F4F					} 
+					form#stickyelements-form input::-webkit-input-placeholder{
+						color: #4F4F4F					}
+					form#stickyelements-form input::placeholder{
+						color: #4F4F4F					}
+					form#stickyelements-form textarea::placeholder {
+						color: #4F4F4F					}
+					form#stickyelements-form textarea::-moz-placeholder {
+						color: #4F4F4F					}					
+			</style>	
+				<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- Ottimizzazione per i motori di ricerca di Rank Math - https://rankmath.com/ -->
+<meta name="description" content="Costruire un tool interno (UI + backend) con i webhook di n8n: crea piccole app e automazioni su misura senza codice. Guida pratica con esempi reali."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia" />
+<meta property="og:description" content="Costruire un tool interno (UI + backend) con i webhook di n8n: crea piccole app e automazioni su misura senza codice. Guida pratica con esempi reali." />
+<meta property="og:url" content="https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/" />
+<meta property="og:site_name" content="AI Automation Italia - La prima Community Italiana per l&#039;Automazione AI" />
+<meta property="article:tag" content="Automazioni" />
+<meta property="article:tag" content="Backend" />
+<meta property="article:tag" content="Integrazione" />
+<meta property="article:tag" content="Interfaccia Utente" />
+<meta property="article:tag" content="N8n" />
+<meta property="article:tag" content="Orchestrazione" />
+<meta property="article:tag" content="Sicurezza" />
+<meta property="article:tag" content="Webhook" />
+<meta property="article:section" content="Guide" />
+<meta property="og:image" content="https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png" />
+<meta property="og:image:secure_url" content="https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="1024" />
+<meta property="og:image:alt" content="Costruire un Tool Interno (UI + Backend) con i Webhook di n8n" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2025-10-01T11:07:22+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia" />
+<meta name="twitter:description" content="Costruire un tool interno (UI + backend) con i webhook di n8n: crea piccole app e automazioni su misura senza codice. Guida pratica con esempi reali." />
+<meta name="twitter:creator" content="@com" />
+<meta name="twitter:image" content="https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png" />
+<meta name="twitter:label1" content="Scritto da" />
+<meta name="twitter:data1" content="Gianmarco Bazzato" />
+<meta name="twitter:label2" content="Tempo di lettura" />
+<meta name="twitter:data2" content="11 minuti" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://aiautomationitalia.com/#organization","name":"AI Automation Italia","url":"https://aiautomationitalia.com","logo":{"@type":"ImageObject","@id":"https://aiautomationitalia.com/#logo","url":"https://aiautomationitalia.com/wp-content/uploads/2025/09/AI-AUTOMATION-ITALIA.png","contentUrl":"https://aiautomationitalia.com/wp-content/uploads/2025/09/AI-AUTOMATION-ITALIA.png","caption":"AI Automation Italia - La prima Community Italiana per l'Automazione AI","inLanguage":"it-IT","width":"1920","height":"1080"}},{"@type":"WebSite","@id":"https://aiautomationitalia.com/#website","url":"https://aiautomationitalia.com","name":"AI Automation Italia - La prima Community Italiana per l'Automazione AI","publisher":{"@id":"https://aiautomationitalia.com/#organization"},"inLanguage":"it-IT"},{"@type":"ImageObject","@id":"https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png","url":"https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png","width":"1024","height":"1024","inLanguage":"it-IT"},{"@type":"WebPage","@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#webpage","url":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/","name":"Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia","datePublished":"2025-10-01T11:07:22+00:00","dateModified":"2025-10-01T11:07:22+00:00","isPartOf":{"@id":"https://aiautomationitalia.com/#website"},"primaryImageOfPage":{"@id":"https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png"},"inLanguage":"it-IT"},{"@type":"Person","@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#author","name":"Gianmarco Bazzato","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/4134bd3724a56379f8279611ffafc6e229157edbec4f11c192a0880d3b54d4fd?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/4134bd3724a56379f8279611ffafc6e229157edbec4f11c192a0880d3b54d4fd?s=96&amp;d=mm&amp;r=g","caption":"Gianmarco Bazzato","inLanguage":"it-IT"},"sameAs":["https://aiautomationitalia.com","https://twitter.com/amministrazione@darmaenergia.com"],"worksFor":{"@id":"https://aiautomationitalia.com/#organization"}},{"@type":"BlogPosting","headline":"Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia","datePublished":"2025-10-01T11:07:22+00:00","dateModified":"2025-10-01T11:07:22+00:00","articleSection":"Guide","author":{"@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#author","name":"Gianmarco Bazzato"},"publisher":{"@id":"https://aiautomationitalia.com/#organization"},"description":"Costruire un tool interno (UI + backend) con i webhook di n8n: crea piccole app e automazioni su misura senza codice. Guida pratica con esempi reali.","name":"Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia","@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#richSnippet","isPartOf":{"@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#webpage"},"image":{"@id":"https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png"},"inLanguage":"it-IT","mainEntityOfPage":{"@id":"https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<title>Costruire un Tool Interno (UI + Backend) con i Webhook di n8n &#045; AI Automation Italia</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="AI Automation Italia &raquo; Feed" href="https://aiautomationitalia.com/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aiautomationitalia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=3db4c5d2193cf0ee8ff1de3af3ffb933"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+</style>
+<style id='wp-block-site-title-inline-css'>
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='wp-block-group-theme-inline-css'>
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://aiautomationitalia.com/wp-includes/blocks/navigation/style.min.css?ver=3db4c5d2193cf0ee8ff1de3af3ffb933' media='all' />
+<style id='wp-block-separator-inline-css'>
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+</style>
+<style id='wp-block-separator-theme-inline-css'>
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+</style>
+<link rel='stylesheet' id='wp-block-social-links-css' href='https://aiautomationitalia.com/wp-includes/blocks/social-links/style.min.css?ver=3db4c5d2193cf0ee8ff1de3af3ffb933' media='all' />
+<style id='wp-block-template-part-theme-inline-css'>
+:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id='wp-block-post-content-inline-css'>
+.wp-block-post-content{display:flow-root}
+</style>
+<style id='wp-block-post-terms-inline-css'>
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+</style>
+<style id='wp-block-comments-inline-css'>
+.wp-block-post-comments{box-sizing:border-box}.wp-block-post-comments .alignleft{float:left}.wp-block-post-comments .alignright{float:right}.wp-block-post-comments .navigation:after{clear:both;content:"";display:table}.wp-block-post-comments .commentlist{clear:both;list-style:none;margin:0;padding:0}.wp-block-post-comments .commentlist .comment{min-height:2.25em;padding-left:3.25em}.wp-block-post-comments .commentlist .comment p{font-size:1em;line-height:1.8;margin:1em 0}.wp-block-post-comments .commentlist .children{list-style:none;margin:0;padding:0}.wp-block-post-comments .comment-author{line-height:1.5}.wp-block-post-comments .comment-author .avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;margin-top:.5em;width:2.5em}.wp-block-post-comments .comment-author cite{font-style:normal}.wp-block-post-comments .comment-meta{font-size:.875em;line-height:1.5}.wp-block-post-comments .comment-meta b{font-weight:400}.wp-block-post-comments .comment-meta .comment-awaiting-moderation{display:block;margin-bottom:1em;margin-top:1em}.wp-block-post-comments .comment-body .commentmetadata{font-size:.875em}.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label{display:block;margin-bottom:.25em}.wp-block-post-comments .comment-form input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments .comment-form textarea{box-sizing:border-box;display:block;width:100%}.wp-block-post-comments .comment-form-cookies-consent{display:flex;gap:.25em}.wp-block-post-comments .comment-form-cookies-consent #wp-comment-cookies-consent{margin-top:.35em}.wp-block-post-comments .comment-reply-title{margin-bottom:0}.wp-block-post-comments .comment-reply-title :where(small){font-size:var(--wp--preset--font-size--medium,smaller);margin-left:.5em}.wp-block-post-comments .reply{font-size:.875em;margin-bottom:1.4em}.wp-block-post-comments input:not([type=submit]),.wp-block-post-comments textarea{border:1px solid #949494;font-family:inherit;font-size:1em}.wp-block-post-comments input:not([type=submit]):not([type=checkbox]),.wp-block-post-comments textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-comments{box-sizing:border-box}
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #0B51C2;--wp--preset--color--secondary: #ec7210;--wp--preset--color--tertiary: #F9FAFE;--wp--preset--color--foreground-alt: #333333;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.25rem;--wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 1.433), 2.25rem);--wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.917), 3rem);--wp--preset--font-size--xx-large: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 2.5), 3.75rem);--wp--preset--font-family--archivo: "Archivo", sans-serif;--wp--preset--font-family--arsenal: "Arsenal", serif;--wp--preset--font-family--baloo-tamma-2: "Baloo Tamma 2", sans-serif;--wp--preset--font-family--geom: "Geom", sans-serif;--wp--preset--font-family--gotu: "Gotu", sans-serif;--wp--preset--font-family--heebo: "Heebo", sans-serif;--wp--preset--font-family--body: "Hind", sans-serif;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--inconsolata: "Inconsolata", sans-serif;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--jost: "Jost", sans-serif;--wp--preset--font-family--karla: "Karla", sans-serif;--wp--preset--font-family--koulen: "Koulen", sans-serif;--wp--preset--font-family--manrope: "Manrope", sans-serif;--wp--preset--font-family--marcellus: 'Marcellus', serif;--wp--preset--font-family--montserrat: "Montserrat", sans-serif;--wp--preset--font-family--mulish: "Mulish", sans-serif;--wp--preset--font-family--noto-serif-display: "Noto Serif Display", serif;--wp--preset--font-family--oswald: "Oswald", sans-serif;--wp--preset--font-family--radio-canada: "Radio Canada", sans-serif;--wp--preset--font-family--roboto-flex: "Roboto Flex", sans-serif;--wp--preset--font-family--rubik: "Rubik", sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--font-family--space-mono: "Space Mono", monospace;--wp--preset--spacing--20: 1rem;--wp--preset--spacing--30: min(2rem, 5vw);--wp--preset--spacing--40: min(3rem, 6vw);--wp--preset--spacing--50: min(4rem, 7vw);--wp--preset--spacing--60: min(6rem, 8vw);--wp--preset--spacing--70: min(7rem, 10vw);--wp--preset--spacing--80: min(8rem, 12vw);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--custom--blocks--core-table--variant-stripes--color--background: var(--wp--preset--color--tertiary);--wp--custom--typography--font-smoothing--moz: grayscale;--wp--custom--typography--font-smoothing--webkit: antialiased;--wp--custom--typography--font-weight--black: 900;--wp--custom--typography--font-weight--extra-bold: 800;--wp--custom--typography--font-weight--bold: 700;--wp--custom--typography--font-weight--semi-bold: 600;--wp--custom--typography--font-weight--medium: 500;--wp--custom--typography--font-weight--regular: 400;--wp--custom--typography--font-weight--light: 300;--wp--custom--typography--font-weight--extra-light: 200;--wp--custom--typography--font-weight--thin: 100;--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;--wp--custom--typography--line-height--large: 1.8;--wp--custom--elements--button--border--radius: 2rem;--wp--custom--elements--button--color--background: var(--wp--preset--color--secondary);--wp--custom--elements--button--color--text: var(--wp--preset--color--foreground);--wp--custom--elements--button--hover--color--background: var(--wp--preset--color--foreground);--wp--custom--elements--button--hover--color--text: var(--wp--preset--color--background);--wp--custom--elements--button--focus--color--background: var(--wp--preset--color--foreground);--wp--custom--elements--button--focus--color--text: var(--wp--preset--color--background);--wp--custom--elements--input--border--radius: 4px;--wp--custom--elements--input--border--width: 1px;--wp--custom--elements--input--border--color: var(--wp--preset--color--foreground);--wp--custom--elements--input--color--background: var(--wp--preset--color--background);--wp--custom--elements--input--color--text: var(--wp--preset--color--foreground);--wp--custom--elements--input--spacing--padding--bottom: calc(0.667em + 1px);--wp--custom--elements--input--spacing--padding--left: calc(1.333em + 1px);--wp--custom--elements--input--spacing--padding--right: calc(1.333em + 1px);--wp--custom--elements--input--spacing--padding--top: calc(0.667em + 1px);--wp--custom--elements--input--typography--font-size: inherit;--wp--custom--elements--input--typography--font-weight: var(--wp--custom--font-weight--regular);--wp--custom--elements--input--typography--line-height: var(--wp--custom--typography--line-height--normal);}:root { --wp--style--global--content-size: 42rem;--wp--style--global--wide-size: 80rem; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--wp--preset--spacing--30); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: var(--wp--preset--spacing--30); }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.is-layout-flex){gap: var(--wp--preset--spacing--30);}:root :where(.is-layout-grid){gap: var(--wp--preset--spacing--30);}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground-alt);font-family: var(--wp--preset--font-family--inter);font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.417), 1.125rem);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);--wp--style--root--padding-top: 0;--wp--style--root--padding-right: var(--wp--preset--spacing--30);--wp--style--root--padding-bottom: 0;--wp--style--root--padding-left: var(--wp--preset--spacing--30);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--foreground);text-decoration: underline;}h1, h2, h3, h4, h5, h6{color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--roboto-flex);}h1{font-size: var(--wp--preset--font-size--xx-large);font-weight: 400;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-size: var(--wp--preset--font-size--x-large);font-weight: 400;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h3{font-size: var(--wp--preset--font-size--large);font-weight: 500;letter-spacing: -0.02em;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.48rem) * 0.721), 1.875rem);font-weight: 500;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-size: clamp(1.25rem, 1.25rem + ((1vw - 0.48rem) * 0.721), 1.5rem);font-weight: 500;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.417), 1.125rem);font-weight: 500;letter-spacing: 0.03em;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background: linear-gradient(135deg,rgb(236,114,16) 0%,rgb(155,81,224) 100%);background-color: var(--wp--custom--elements--button--color--background);border-radius: var(--wp--custom--elements--button--border--radius);border-width: 0;color: var(--wp--preset--color--background);font-family: inherit;font-size: inherit;font-weight: var(--wp--custom--typography--font-weight--medium);line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--custom--elements--button--hover--color--background);color: var(--wp--custom--elements--button--hover--color--text);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--custom--elements--button--focus--color--background);color: var(--wp--custom--elements--button--focus--color--text);outline-color: var(--wp--custom--elements--button--focus--color--background);outline-offset: 2px;}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--custom--elements--button--hover--color--background);color: var(--wp--custom--elements--button--hover--color--text);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-color{color: var(--wp--preset--color--foreground-alt) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-background-color{background-color: var(--wp--preset--color--foreground-alt) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-foreground-alt-border-color{border-color: var(--wp--preset--color--foreground-alt) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-archivo-font-family{font-family: var(--wp--preset--font-family--archivo) !important;}.has-arsenal-font-family{font-family: var(--wp--preset--font-family--arsenal) !important;}.has-baloo-tamma-2-font-family{font-family: var(--wp--preset--font-family--baloo-tamma-2) !important;}.has-geom-font-family{font-family: var(--wp--preset--font-family--geom) !important;}.has-gotu-font-family{font-family: var(--wp--preset--font-family--gotu) !important;}.has-heebo-font-family{font-family: var(--wp--preset--font-family--heebo) !important;}.has-body-font-family{font-family: var(--wp--preset--font-family--body) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-inconsolata-font-family{font-family: var(--wp--preset--font-family--inconsolata) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-karla-font-family{font-family: var(--wp--preset--font-family--karla) !important;}.has-koulen-font-family{font-family: var(--wp--preset--font-family--koulen) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-marcellus-font-family{font-family: var(--wp--preset--font-family--marcellus) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-mulish-font-family{font-family: var(--wp--preset--font-family--mulish) !important;}.has-noto-serif-display-font-family{font-family: var(--wp--preset--font-family--noto-serif-display) !important;}.has-oswald-font-family{font-family: var(--wp--preset--font-family--oswald) !important;}.has-radio-canada-font-family{font-family: var(--wp--preset--font-family--radio-canada) !important;}.has-roboto-flex-font-family{font-family: var(--wp--preset--font-family--roboto-flex) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.wp-block-heading 
+{ overflow-wrap: break-word; hyphens: auto; text-wrap: balance; } 
+.wp-block-heading:lang(zh), .wp-block-heading:lang(ja), .wp-block-heading:lang(ko), .wp-block-heading:lang(th), .wp-block-heading:lang(lo), .wp-block-heading:lang(my), .wp-block-heading:lang(km), .wp-block-heading:lang(ar), .wp-block-heading:lang(ur) { word-break: keep-all; hyphens: manual; }
+.pulsante-invio-form-consulenza {
+
+	background-color: #ec7210;
+
+.wpforms-block button.wpforms-submit {
+	background-color: #ec7210 !important;
+}	
+}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date){font-size: var(--wp--preset--font-size--small);text-decoration: none;text-transform: uppercase;}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}
+:root :where(.wp-block-post-terms a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}
+:root :where(.wp-block-separator){color: var(--wp--preset--color--foreground);}
+:root :where(.wp-block-site-title){font-family: var(--wp--preset--font-family--heading);font-size: var(--wp--preset--font-size--large);font-weight: var(--wp--custom--typography--font-weight--bold);line-height: var(--wp--custom--typography--line-height--tiny);}
+:root :where(.wp-block-template-part){margin-top: 0px;}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-elements-93b67a512692fcfcfc4520b11f003c20 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--background);}.wp-container-core-group-is-layout-3b4e9d3e{flex-wrap:nowrap;gap:1rem;}.wp-container-core-navigation-is-layout-f665d2b5{justify-content:flex-end;}.wp-container-core-social-links-is-layout-72308760{flex-wrap:nowrap;gap:1rem;justify-content:flex-end;}.wp-container-core-group-is-layout-ceead2e9{gap:var(--wp--preset--spacing--30);justify-content:space-between;}.wp-container-core-group-is-layout-f9cb6abc > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-f9cb6abc > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7d13c79f > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7d13c79f > * + *{margin-block-start:0.5rem;margin-block-end:0;}.wp-container-core-group-is-layout-c4378f5b > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-c4378f5b > * + *{margin-block-start:2.5rem;margin-block-end:0;}.wp-container-core-group-is-layout-5cc37658 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-5cc37658 > * + *{margin-block-start:3rem;margin-block-end:0;}.wp-container-core-social-links-is-layout-b20f1b96{gap:10px 10px;justify-content:center;}.wp-container-core-group-is-layout-f5bb311e > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-f5bb311e > * + *{margin-block-start:var(--wp--preset--spacing--30);margin-block-end:0;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel='stylesheet' id='ez-toc-css' href='https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.76' media='all' />
+<style id='ez-toc-inline-css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-size: 95%;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<link rel='stylesheet' id='extendable-style-css' href='https://aiautomationitalia.com/wp-content/themes/extendable/style.css?ver=2.0.29' media='all' />
+<link rel='stylesheet' id='mystickyelements-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&#038;ver=6.8.3' media='all' />
+<link rel='stylesheet' id='font-awesome-css-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/css/font-awesome.min.css?ver=2.3.2' media='all' />
+<link rel='stylesheet' id='mystickyelements-front-css-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/css/mystickyelements-front.min.css?ver=2.3.2' media='all' />
+<link rel='stylesheet' id='intl-tel-input-css' href='https://aiautomationitalia.com/wp-content/plugins/mystickyelements/intl-tel-input-src/build/css/intlTelInput.css?ver=2.3.2' media='all' />
+<script src="https://aiautomationitalia.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://aiautomationitalia.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://aiautomationitalia.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://aiautomationitalia.com/wp-json/wp/v2/posts/396" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://aiautomationitalia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiautomationitalia.com%2Fcostruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://aiautomationitalia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faiautomationitalia.com%2Fcostruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n%2F&#038;format=xml" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["guide"],"pageAttributes":["automazioni","backend","integrazione","interfaccia-utente","n8n","orchestrazione","sicurezza","webhook"],"pagePostAuthor":"Gianmarco Bazzato"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCBK9W69');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"https:\/\/aiautomationitalia.com\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="https://aiautomationitalia.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="https://aiautomationitalia.com/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload"><style class='wp-fonts-local'>
+@font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/archivo/archivo_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Arsenal;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/arsenal/arsenal-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Arsenal;font-style:normal;font-weight:700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/arsenal/arsenal-bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Baloo Tamma 2";font-style:normal;font-weight:400 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/baloo-tamma-2/baloo-tamma-2_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Geom;font-style:normal;font-weight:300 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/geom/geom-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Gotu;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/gotu/gotu-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Heebo;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/heebo/heebo-variable-wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Hind;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/hind/hind-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-thin.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:200;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-extra-light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:300;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:500;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-medium.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:600;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-semibold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/ibm-plex-sans/ibm-plex-sans-bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inconsolata;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/inconsolata/inconsolata-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/inter/inter-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Jost;font-style:normal;font-weight:100 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/jost/jost-variable.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Karla;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/karla/karla.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Koulen;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/koulen/koulen-regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/manrope/manrope.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Marcellus;font-style:normal;font-weight:400;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/marcellus/marcellus_wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/montserrat/montserrat.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Mulish;font-style:normal;font-weight:100 800;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/mulish/mulish.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Noto Serif Display";font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/noto-serif-display/noto-serif-display.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Oswald;font-style:normal;font-weight:300 700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/oswald/oswald.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Radio Canada";font-style:normal;font-weight:300 700;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/radio-canada/radio-canada.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Roboto Flex";font-style:normal;font-weight:100 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/roboto-flex/roboto-flex.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Rubik;font-style:normal;font-weight:300 900;font-display:block;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/rubik/rubik.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/source-serif-pro/source-serif-pro.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:400;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/space-mono/space-mono-regular.woff2') format('woff2');}
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:700;font-display:fallback;src:url('https://aiautomationitalia.com/wp-content/themes/extendable/assets/fonts/space-mono/space-mono-bold.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-180x180.png" />
+<meta name="msapplication-TileImage" content="https://aiautomationitalia.com/wp-content/uploads/2025/09/cropped-Untitled-design-15-270x270.png" />
+<style id="aiai-fixes-css">
+@media (max-width:782px){.mystickyelements-fixed,.mystickyelements-minimize{display:none!important;}}
+.aiai-foundational{border-left:4px solid #e8651f;background:#faf6f2;padding:12px 16px;margin:20px 0;border-radius:4px;font-size:.95em;}
+.aiai-foundational a{color:#c0410a;font-weight:600;}
+.aiai-related{margin:40px 0 16px;padding-top:20px;border-top:1px solid #e5e5e5;}
+.aiai-related h3{margin:0 0 12px;font-size:1.15em;}
+.aiai-related ul{margin:0;padding-left:18px;}
+.aiai-related li{margin:6px 0;}
+.aiai-related a{color:#c0410a;font-weight:600;}
+.aiai-cta{margin:24px 0;padding:18px 20px;background:linear-gradient(135deg,#e8651f,#c0410a);border-radius:8px;color:#fff;}
+.aiai-cta a{display:inline-block;margin-top:6px;color:#fff;font-weight:700;text-decoration:underline;}
+</style>
+</head>
+
+<body data-rsssl=1 class="wp-singular post-template-default single single-post postid-396 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-extendable">
+
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCBK9W69" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wp-site-blocks"><header class="wp-block-template-part">
+<div class="wp-block-group alignfull has-background-color has-foreground-background-color has-text-color has-background has-link-color has-rubik-font-family wp-elements-93b67a512692fcfcfc4520b11f003c20 is-layout-flow wp-container-core-group-is-layout-f9cb6abc wp-block-group-is-layout-flow" style="border-style:none;border-width:0px;border-radius:0px;margin-top:0;margin-bottom:0">
+<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-ceead2e9 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-3b4e9d3e wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="https://aiautomationitalia.com/" class="custom-logo-link" rel="home"><img width="66" height="66" src="https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited.png" class="custom-logo" alt="AI Automation Italia" decoding="async" srcset="https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited.png 346w, https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited-300x300.png 300w, https://aiautomationitalia.com/wp-content/uploads/2025/11/AI-Automation-Italia-Logo-Cubi-000000-edited-150x150.png 150w" sizes="(max-width: 66px) 100vw, 66px" /></a></div>
+
+<h1 style="text-transform:uppercase;" class="wp-block-site-title has-medium-font-size"><a href="https://aiautomationitalia.com" target="_self" rel="home">AI Automation Italia</a></h1></div>
+
+
+<nav style="text-transform:uppercase;" class="is-responsive items-justified-right wp-block-navigation has-geom-font-family is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-f665d2b5 wp-block-navigation-is-layout-flex" aria-label="Navigazione dell&#039;intestazione" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Apri menu" class="wp-block-navigation__responsive-container-open" 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 5v1.5h14V5H5zm0 7.8h14v-1.5H5v1.5zM5 19h14v-1.5H5V19z" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  has-text-color has-foreground-color has-background has-background-background-color"  id="modal-1" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Chiudi menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-1-content">
+								<ul style="text-transform:uppercase;" class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation has-geom-font-family"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/"><span class="wp-block-navigation-item__label">Homepage</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/manifesto/"><span class="wp-block-navigation-item__label">manifesto</span></a></li><li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot;, &quot;modal&quot;: null }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="wp-block-navigation-item has-child open-on-hover-click wp-block-navigation-submenu"><a class="wp-block-navigation-item__content" href="https://aiautomationitalia.com/blog/"><span class="wp-block-navigation-item__label">Blog</span></a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="Sottomenu di Blog" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle" ><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-foreground-color has-background has-background-background-color wp-block-navigation-submenu"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/articoli/"><span class="wp-block-navigation-item__label">Articoli e Notizie AI Automation</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/guide/"><span class="wp-block-navigation-item__label">Guide</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/category/workflow-template/"><span class="wp-block-navigation-item__label">Workflow N8N Template</span></a></li></ul></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/consulenza/"><span class="wp-block-navigation-item__label">Consulenza</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://aiautomationitalia.com/migliori-tool-ai-automazione-sconti-saas/"><span class="wp-block-navigation-item__label">Sconti SaaS</span></a></li></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only ext-hidden tablet:ext-flex is-content-justification-right is-nowrap is-layout-flex wp-container-core-social-links-is-layout-72308760 wp-block-social-links-is-layout-flex"><li style="color: #ffffff; " class="wp-social-link wp-social-link-instagram has-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://instagram.com/aiautomationitalia" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+
+<li style="color: #ffffff; " class="wp-social-link wp-social-link-x has-background-color wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="https://x.com/aiautomationita" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" /></svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li></ul>
+</div>
+</div>
+</header>
+
+
+<main class="wp-block-group is-layout-flow wp-container-core-group-is-layout-5cc37658 wp-block-group-is-layout-flow" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--custom--spacing--medium);padding-bottom:var(--wp--custom--spacing--medium)">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c4378f5b wp-block-group-is-layout-constrained">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-7d13c79f wp-block-group-is-layout-constrained"><h1 style="text-transform:uppercase;" class="wp-block-post-title has-x-large-font-size"><a href="https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/" target="_self" >Costruire un Tool Interno (UI + Backend) con i Webhook di n8n</a></h1>
+
+<div class="wp-block-post-date"><time datetime="2025-10-01T11:07:22+00:00">Ottobre 1, 2025</time></div></div>
+
+
+<figure style="aspect-ratio:16/9;width:50%;" class="alignwide wp-block-post-featured-image"><a href="https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/" target="_self"  ><img width="1024" height="1024" src="https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Costruire un Tool Interno (UI + Backend) con i Webhook di n8n" style="width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" srcset="https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n.png 1024w, https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n-300x300.png 300w, https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n-150x150.png 150w, https://aiautomationitalia.com/wp-content/uploads/2025/10/costruire-tool-front-end-e-back-end-n8n-768x768.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" title="Costruire un Tool Interno (UI + Backend) con i Webhook di n8n 1"></a></figure></div>
+
+
+<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained"><p>Vuoi trasformare n8n in un backend “pronto all’uso” e collegarlo a una UI per il tuo team? In questa guida pratica vedremo come costruire tool front-end e back-end n8n con un’architettura semplice: un’interfaccia utente per automazioni interne (Retool, Appsmith, ToolJet o un front‑end custom) che invia chiamate HTTP dal front‑end alla pipeline di n8n tramite endpoint REST su n8n basati su Webhook. Imparerai a progettare webhook sincroni e asincroni, definire un formato di payload coerente, applicare validazione del payload, impostare autenticazione JWT/OAuth verso gli endpoint e proteggerti con CORS e protezione CSRF per webhook. Tratteremo inoltre gestione credenziali e segreti, reverse proxy Nginx tra UI e n8n con domini separati per editor e runtime, rate limiting e throttling delle richieste, oltre a logging, alerting e osservabilità dei workflow. Al termine avrai uno schema riutilizzabile per orchestrazione dei workflow, con esempi passo‑passo e configurazioni dei nodi chiave per andare in produzione senza esporre l’editor.</p><div class="aiai-foundational">&#128218; <strong>Nuovo a n8n?</strong> Parti dalla <a href="https://aiautomationitalia.com/guida-n8n-completa-2025/">guida completa: cos&#39;&egrave; n8n e come funziona</a>.</div>
+<p>[IMG: diagramma con Front‑end (Retool/Appsmith/Next.js) → Webhook Trigger (n8n) → orchestrazione → Respond to Webhook → risposta alla UI]</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_76 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title" style="cursor:inherit">Indice dei contenuti</p>
+<span class="ez-toc-title-toggle"><a href="#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content"><span class="ez-toc-js-icon-con"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></span></a></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Architettura_di_riferimento_UI_leggera_backend_a_webhook_in_n8n" >Architettura di riferimento: UI leggera + backend a webhook in n8n</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#Progettare_endpoint_REST_su_n8n_webhook_sincroniasincroni_e_orchestrazione" >Progettare endpoint REST su n8n: webhook sincroni/asincroni e orchestrazione</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-3" href="#Sicurezza_autenticazione_validazione_del_payload_e_protezioni_di_rete" >Sicurezza: autenticazione, validazione del payload e protezioni di rete</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-4" href="#Collegare_la_UI_RetoolAppsmithToolJet_e_front%E2%80%91end_custom" >Collegare la UI: Retool/Appsmith/ToolJet e front‑end custom</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-5" href="#Prestazioni_e_affidabilita_throttling_code_e_osservabilita" >Prestazioni e affidabilità: throttling, code e osservabilità</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Pattern_applicativi_CRUD_interno_azioni_marketing_e_sincronizzazioni" >Pattern applicativi: CRUD interno, azioni marketing e sincronizzazioni</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#Reverse_proxy_domini_e_governance_delle_credenziali" >Reverse proxy, domini e governance delle credenziali</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#Operativita_versioning_test_e_rollback_veloci" >Operatività: versioning, test e rollback veloci</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#Quick_Takeaways" >Quick Takeaways</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#Conclusione" >Conclusione</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="#FAQ" >FAQ</a></li></ul></nav></div>
+<h2 id="architetturadiriferimentouileggerabackendawebhookinn8n"><span class="ez-toc-section" id="Architettura_di_riferimento_UI_leggera_backend_a_webhook_in_n8n"></span>Architettura di riferimento: UI leggera + backend a webhook in n8n<span class="ez-toc-section-end"></span></h2>
+<p>Per un tool interno efficace, separa interfaccia e orchestrazione:</p>
+<ul>
+<li>Interfaccia utente per automazioni interne: costruisci la UI con Appsmith/Retool/ToolJet o un front‑end custom (Next.js/React). La UI invia richieste HTTP firmate verso gli endpoint REST su n8n.</li>
+<li>Backend n8n: un set di workflow esposti tramite Webhook Trigger che ricevono la richiesta, eseguono l’orchestrazione dei workflow (enrichment, chiamate a sistemi interni/esterni) e rispondono. A seconda del caso d’uso: webhook sincroni (risposta attesa) o asincroni (ack immediato e processing in background).</li>
+<li>Sicurezza e rete: reverse proxy Nginx tra UI e n8n, domini separati per editor e runtime, autenticazione JWT/OAuth verso gli endpoint, policy di rate limiting e throttling delle richieste.</li>
+<li>Osservabilità: logging, alerting e osservabilità dei workflow con tagging per ambiente/versione e una convention di correlationId per tracciare ogni richiesta punta‑punta.</li>
+</ul>
+<p>Perché funziona: la UI resta snella (visualizzazione, input utente, feedback), mentre n8n gestisce la logica, le integrazioni e la gestione delle credenziali. In questo modo eviti di esporre l’editor e mantieni un ciclo di rilascio rapido sia per la UI (componenti) sia per i workflow (versioni).</p>
+<p>[IMG: schema logico con domini separati ui.example.com → n8n.example.com/webhook/* e editor su studio.example.com]</p>
+<h2 id="progettareendpointrestsun8nwebhooksincroniasincronieorchestrazione"><span class="ez-toc-section" id="Progettare_endpoint_REST_su_n8n_webhook_sincroniasincroni_e_orchestrazione"></span>Progettare endpoint REST su n8n: webhook sincroni/asincroni e orchestrazione<span class="ez-toc-section-end"></span></h2>
+<p>Il cardine è il nodo Webhook Trigger. Puoi configurarlo per rispondere subito (asincrono) o attendere l’elaborazione (sincrono).</p>
+<p>Esempio di Webhook asincrono (ack immediato)</p>
+<pre><code class="json language-json">{
+  "path": "incoming-data",
+  "methods": ["POST"],
+  "responseMode": "onReceived",
+  "responseData": {
+    "statusCode": 200,
+    "body": "Webhook received successfully"
+  }
+}
+</code></pre>
+<ul>
+<li>responseMode: &#8220;onReceived&#8221; invia conferma immediata alla UI, ideale quando i job durano più di qualche secondo.</li>
+<li>A valle del Webhook Trigger prosegui con i nodi di orchestrazione, e notifichi l’esito alla UI via canale alternativo (es. polling dedicato, o notifica Slack/Email interna).</li>
+</ul>
+<p>Esempio di Webhook sincrono con risposta calcolata</p>
+<ul>
+<li>Configura il Webhook Trigger con la stessa struttura di path e methods ma senza “onReceived” (predefinito: risposta dall’ultimo nodo).</li>
+<li>A fine flusso, usa il nodo Respond To Webhook per inviare un JSON preciso (status, headers, body) all’utente:</li>
+</ul>
+<pre><code class="json language-json">{
+  "responseMode": "responseNode",
+  "options": {
+    "responseData": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "ok": true,
+        "message": "Operazione completata"
+      }
+    }
+  }
+}
+</code></pre>
+<p>Orchestrazione modulare con sub‑workflow</p>
+<ul>
+<li>Usa il nodo Execute Workflow per invocare un workflow secondario (con un Workflow Trigger nel callee) e attendere il risultato, così componi servizi riutilizzabili: validazione, arricchimenti, integrazioni ripetute.</li>
+</ul>
+<p>Best practice</p>
+<ul>
+<li>Versiona gli endpoint per non rompere la UI (es. /webhook/v1/incoming-data).</li>
+<li>Mantieni schema del payload coerente: id operazione, parametri, metadati (utente/ruolo), correlationId.</li>
+<li>Prevedi esiti strutturati: { ok, errorCode?, message?, data? } per UX prevedibile.</li>
+</ul>
+<p>[IMG: canvas con Webhook Trigger → validazione → Execute Workflow (service A) → Execute Workflow (service B) → Respond To Webhook]</p>
+<h2 id="sicurezzaautenticazionevalidazionedelpayloadeprotezionidirete"><span class="ez-toc-section" id="Sicurezza_autenticazione_validazione_del_payload_e_protezioni_di_rete"></span>Sicurezza: autenticazione, validazione del payload e protezioni di rete<span class="ez-toc-section-end"></span></h2>
+<p>Ogni endpoint deve essere protetto: autentica la UI, valida il payload, limita la superficie esposta e isola l’editor.</p>
+<p>Autenticazione della UI verso gli endpoint</p>
+<ul>
+<li>JWT/OAuth: fai sì che il front‑end includa un header Authorization: Bearer <token>. Nel workflow puoi verificare il token in una fase di controllo (es. confronto con un segreto o validazione in un servizio esterno) prima di procedere.</li>
+<li>Esempio di uso di credenziali nelle chiamate in uscita (HTTP Request) verso servizi esterni:</li>
+</ul>
+<pre><code class="json language-json">{
+  "name": "External API Call",
+  "type": "n8n-nodes-base.httpRequest",
+  "typeVersion": 1,
+  "parameters": {
+    "url": "https://api.partner.com/action",
+    "method": "POST",
+    "responseFormat": "json",
+    "jsonParameters": true,
+    "bodyParametersJson": {
+      "input": "={{$json}}"
+    },
+    "headerParametersUi": {
+      "parameter": [
+        { "name": "Authorization", "value": "Bearer YOUR_API_TOKEN" }
+      ]
+    }
+  },
+  "credentials": {
+    "oAuth2Api": { "name": "Partner OAuth2" }
+  }
+}
+</code></pre>
+<p>Validazione del payload</p>
+<ul>
+<li>Applica controlli su campi obbligatori (id, azione, parametri minimi) e vincoli (tipi/limiti). Se manca qualcosa, rispondi con Respond To Webhook e uno status 400 chiaro.</li>
+<li>Mantieni un contratto stabile (schema condiviso) per ridurre regressioni tra UI e workflow.</li>
+</ul>
+<p>CORS e protezione CSRF per webhook</p>
+<ul>
+<li>Imposta le regole CORS a livello di reverse proxy Nginx tra UI e n8n (allowlist dei domini della UI, metodi/headers ammessi).</li>
+<li>Per richieste state‑changing dalla UI, aggiungi token anti‑CSRF o invoca gli endpoint solo da backend-to-backend.</li>
+</ul>
+<p>Domini separati e editor non esposto</p>
+<ul>
+<li>Esegui l’editor su un dominio/admin separato (es. studio.example.com), pubblico solo su VPN/SSO.</li>
+<li>Il runtime (webhook) resta su n8n.example.com, dietro reverse proxy Nginx con TLS, rate limiting e log dedicati.</li>
+</ul>
+<p>[IMG: schema sicurezza con header Authorization, Nginx con CORS e editor su dominio isolato]</p>
+<h2 id="collegarelauiretoolappsmithtooljetefrontendcustom"><span class="ez-toc-section" id="Collegare_la_UI_RetoolAppsmithToolJet_e_front%E2%80%91end_custom"></span>Collegare la UI: Retool/Appsmith/ToolJet e front‑end custom<span class="ez-toc-section-end"></span></h2>
+<p>UI no‑code/low‑code</p>
+<ul>
+<li>integrazione con Appsmith, Retool e ToolJet: definisci una “query” HTTP verso l’endpoint n8n (POST /webhook/incoming-data), passa i parametri del form come JSON e mostra la risposta in un widget (table, text, badge di stato).</li>
+<li>Gestione errori: mappa status code ≠ 200 come errori visibili all’utente (toastr/alert), loggando correlationId per un assist a chi fa triage.</li>
+</ul>
+<p>Front‑end custom (es. Next.js/React)</p>
+<ul>
+<li>Chiamate HTTP dal front‑end alla pipeline: invia le richieste col token dell’utente o un service token (meglio server‑side per evitare leakage).<br />
+Esempio fetch:</li>
+</ul>
+<pre><code class="javascript language-javascript">async function submitAction(payload) {
+  const res = await fetch('https://n8n.example.com/webhook/incoming-data', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${await getToken()}`
+    },
+    body: JSON.stringify(payload)
+  });
+  if (!res.ok) {
+    const err = await res.text().catch(() =&gt; 'Request failed');
+    throw new Error(err);
+  }
+  return res.json();
+}
+</code></pre>
+<ul>
+<li>UX sincrona vs asincrona: se il workflow dura, usa pattern asincrono (Webhook Trigger con responseMode &#8220;onReceived&#8221;) e mostra una “coda di operazioni” nella UI con polling su uno specifico endpoint di stato.</li>
+</ul>
+<p>Contratti chiari</p>
+<ul>
+<li>Documenta i parametri richiesti, le varianti consentite e le risposte possibili (ok/errorCode). Un contratto esplicito riduce retry inutili e semplifica la manutenzione.</li>
+</ul>
+<p>[IMG: schermata Retool con form → chiamata HTTP → tabella output; snippet fetch in un file Next.js]</p>
+<h2 id="prestazionieaffidabilitthrottlingcodeeosservabilit"><span class="ez-toc-section" id="Prestazioni_e_affidabilita_throttling_code_e_osservabilita"></span>Prestazioni e affidabilità: throttling, code e osservabilità<span class="ez-toc-section-end"></span></h2>
+<p>Per sostenere carichi reali:</p>
+<ul>
+<li>Rate limiting e throttling delle richieste: applica limiti per IP/utente a livello di Nginx o gateway; previeni burst verso endpoint lenti e proteggi le integrazioni esterne.</li>
+<li>Code di esecuzione e modalità queue/worker: separa l’ingest (webhook) dall’esecuzione. I webhook rispondono subito, mentre l’elaborazione avviene su worker dedicati; la UI non resta in attesa e l’esperienza è più fluida.</li>
+<li>Webhook sincroni e asincroni: scegli in base all’azione. Per consultazioni rapide (lookup) usa sincrono; per job lenti (generazione report, sync massivi) passa ad asincrono.</li>
+<li>Logging, alerting e osservabilità dei workflow: centralizza i log applicativi e aggiungi un correlationId in ingresso all’endpoint per seguire ogni richiesta. Monitora throughput, durata media/p95, error rate, trend nel tempo, e metti allarmi su deviazioni.</li>
+</ul>
+<p>Diagnosi rapida</p>
+<ul>
+<li>Se un endpoint degrada, confronta la durata media con p95/p99 per trovare variabilità. Controlla se i picchi coincidono con deploy o campagne/traffico. Individua i nodi più lenti nel dettaglio esecuzione e intervieni su payload, batching o timeout lato integrazioni esterne.</li>
+</ul>
+<p>[IMG: dashboard con chart di throughput, p95, error rate e log filtrati per correlationId]</p>
+<h2 id="patternapplicativicrudinternoazionimarketingesincronizzazioni"><span class="ez-toc-section" id="Pattern_applicativi_CRUD_interno_azioni_marketing_e_sincronizzazioni"></span>Pattern applicativi: CRUD interno, azioni marketing e sincronizzazioni<span class="ez-toc-section-end"></span></h2>
+<p>Esempio 1 — CRUD interno (catalogo promo)</p>
+<ul>
+<li>UI invia { action: &#8220;createPromo&#8221;, data: {…} } a /webhook/v1/incoming-data</li>
+<li>Workflow: valida payload, invoca Execute Workflow “promo-create” con inputData; alla fine Respond To Webhook con { ok, idPromo }</li>
+<li>Vantaggio: orchestrazione modulare, UI snella e tracciabilità completa.</li>
+</ul>
+<p>Esempio 2 — Azione marketing (invio coupon)</p>
+<ul>
+<li>UI: seleziona segmento e parametri; invia POST al webhook asincrono</li>
+<li>Workflow: arricchisce i dati, chiama integrazioni esterne (CRM/Email) con HTTP Request autenticato; successivamente notifica esito all’utente via UI o Slack</li>
+<li>Vantaggio: il team avvia campagne senza attendere, evitando timeout front‑end.</li>
+</ul>
+<p>Esempio 3 — Sincronizzazione (report giornaliero)</p>
+<ul>
+<li>UI pianifica un job (o lo lancia manualmente); endpoint asincrono che enqueua il task</li>
+<li>Workflow: legge dati da fonti multiple, aggrega e restituisce un link al report via UI</li>
+<li>Vantaggio: separazione netta tra trigger, calcolo e distribuzione.</li>
+</ul>
+<p>[IMG: tre flussi n8n etichettati CRUD, Campaign, Report con ingressi e uscite]</p>
+<h2 id="reverseproxydominiegovernancedellecredenziali"><span class="ez-toc-section" id="Reverse_proxy_domini_e_governance_delle_credenziali"></span>Reverse proxy, domini e governance delle credenziali<span class="ez-toc-section-end"></span></h2>
+<p>Reverse proxy Nginx tra UI e n8n</p>
+<ul>
+<li>Termina TLS, imposta CORS (origin allowlist), aggiunge rate limiting e logging fine‑grained (correlationId nei log).</li>
+<li>Reindirizza /webhook/* verso n8n; separa net url e proteggi /rest/* dell’editor.</li>
+</ul>
+<p>Domini separati per editor e runtime</p>
+<ul>
+<li>editor su studio.example.com (accesso VPN/SSO o IP allowlist)</li>
+<li>runtime su n8n.example.com (solo webhook pubblici documentati)</li>
+</ul>
+<p>Gestione credenziali e segreti</p>
+<ul>
+<li>Usa le credenziali salvate in n8n e referenziale nei nodi (es. OAuth2 “Partner OAuth2” come nel JSON sopra). Evita di passare segreti dalla UI.</li>
+<li>Ruota periodicamente le chiavi e limita la visibilità: principio del minimo privilegio anche nel team.</li>
+</ul>
+<p>[IMG: blocco Nginx con TLS, CORS e rate limit; schema domini editor/runtime]</p>
+<h2 id="operativitversioningtesterollbackveloci"><span class="ez-toc-section" id="Operativita_versioning_test_e_rollback_veloci"></span>Operatività: versioning, test e rollback veloci<span class="ez-toc-section-end"></span></h2>
+<p>Versiona endpoint e workflow</p>
+<ul>
+<li>Prefissa i path con la versione (/webhook/v1/…), mantieni compatibilità il più a lungo possibile e annuncia deprecazioni con anticipo.</li>
+</ul>
+<p>Test</p>
+<ul>
+<li>Casi felici ed edge case (campi mancanti, formati errati); verifica sempre la risposta di errore (status 4xx con messaggio utile).</li>
+<li>Esegui test di carico leggeri sugli endpoint critici per calibrare timeout/limiti.</li>
+</ul>
+<p>Rollback</p>
+<ul>
+<li>Mantieni copie delle versioni precedenti dei workflow; se un deploy innalza error rate o p95, torna rapidamente alla versione stabile.</li>
+</ul>
+<p>[IMG: tabella versioni con note, endpoint attivi e data deprecazione]</p>
+<h2 id="quicktakeaways"><span class="ez-toc-section" id="Quick_Takeaways"></span>Quick Takeaways<span class="ez-toc-section-end"></span></h2>
+<ul>
+<li>Esponi funzioni interne come endpoint REST su n8n con Webhook Trigger; usa Respond To Webhook per risposte controllate.</li>
+<li>Scegli sincrono per azioni rapide e asincrono (responseMode &#8220;onReceived&#8221;) per job lenti.</li>
+<li>Collega UI (Retool/Appsmith/ToolJet o custom) con chiamate HTTP firmate; valida payload e autentica con JWT/OAuth.</li>
+<li>Proteggi gli endpoint con Nginx (TLS, CORS, rate limiting), domini separati e credenziali gestite in n8n.</li>
+<li>Osserva e reagisci: log centralizzati, correlationId, metriche di durata/throughput/errori, e alert pragmatici.</li>
+<li>Orchestrazione modulare: componi sub‑workflow riutilizzabili con Execute Workflow per ridurre duplicazioni e tempi di rilascio.</li>
+</ul>
+<h2 id="conclusione"><span class="ez-toc-section" id="Conclusione"></span>Conclusione<span class="ez-toc-section-end"></span></h2>
+<p>Costruire tool front-end e back-end n8n è un modo rapido per portare automazioni affidabili nelle mani del tuo team senza scrivere un backend da zero. Con un’interfaccia utente per automazioni interne che invia chiamate HTTP dal front‑end alla pipeline, e un set di workflow esposti come endpoint REST su n8n, ottieni una separazione pulita tra presentazione e orchestrazione dei workflow. I webhook sincroni e asincroni coprono i casi d’uso quotidiani, mentre sicurezza e rete (JWT/OAuth, CORS/CSRF lato proxy, domini separati, rate limiting) tengono al sicuro dati e sistemi. Infine, logging, alerting e osservabilità dei workflow consentono di misurare, spiegare e migliorare continuitamente le performance. Se sei un marketer, questo si traduce in velocità: lanci strumenti interni su misura, riduci i passaggi manuali e sperimenti con nuove iniziative senza attendere lunghi cicli di sviluppo. Parti da un singolo endpoint (es. “genera coupon”), chiudi il loop con una UI minimale, e poi estendi in modo modulare: catalogo promo, sincronizzazioni, reportistica e campagne, tutti su una base sicura e osservabile.</p>
+<h2 id="faq"><span class="ez-toc-section" id="FAQ"></span>FAQ<span class="ez-toc-section-end"></span></h2>
+<ul>
+<li>
+<p>Posso esporre più endpoint REST con n8n?</p>
+</li>
+<li>
+<p>Sì, definisci più Webhook Trigger con path distinti (idealmente versionati) e mappa ogni endpoint a un flusso specifico. Usa Respond To Webhook per risposte controllate.</p>
+</li>
+<li>
+<p>Come collego una UI no‑code come Retool o Appsmith?</p>
+</li>
+<li>
+<p>Crea una “query” HTTP verso il tuo webhook n8n, invia il payload JSON e mostra la risposta nei widget. Gestisci status ≠ 200 come errori e includi il correlationId per il debug.</p>
+</li>
+<li>
+<p>Come proteggo gli endpoint dagli abusi?</p>
+</li>
+<li>
+<p>Implementa autenticazione JWT/OAuth sulla UI, limita gli IP e attiva rate limiting e throttling nel reverse proxy Nginx. Mantieni domini separati per editor e runtime.</p>
+</li>
+<li>
+<p>Cosa scegliere tra webhook sincrono e asincrono?</p>
+</li>
+<li>
+<p>Sincrono per risposte rapide (lookup/azioni veloci). Asincrono (responseMode &#8220;onReceived&#8221;) per job lenti, così la UI non va in timeout e l’utente può seguire lo stato.</p>
+</li>
+<li>
+<p>Come gestire segreti e credenziali?</p>
+</li>
+<li>
+<p>Salvali come credenziali in n8n e referenziale nei nodi (es. OAuth2). Non inviare segreti dalla UI e applica rotazione periodica con permessi minimi.</p>
+</li>
+</ul>
+<p>Hai già un’idea di tool interno da costruire? Racconta quale endpoint vuoi pubblicare per primo e condividi questa guida con il tuo team: quale automazione sbloccherà più tempo alla tua organizzazione questa settimana?</p>
+<div class="aiai-related"><h3>Articoli correlati</h3><ul><li><a href="https://aiautomationitalia.com/automate-rpa-guida-completa-a-power-automate-e-alliperautomazione-per-le-aziende/">Automate RPA: Guida Completa a Power Automate e all&#8217;Iperautomazione per le Aziende</a></li><li><a href="https://aiautomationitalia.com/rpa-process-guida-completa-e-operativa-allautomazione-robotica/">RPA Process: Guida Completa e Operativa all&#8217;Automazione Robotica</a></li><li><a href="https://aiautomationitalia.com/rpa-robotica-guida-completa-a-benefici-costi-e-roadmap/">RPA Robotica: guida completa a benefici, costi e roadmap</a></li><li><a href="https://aiautomationitalia.com/automation-rpa-guida-completa-allautomazione-robotica-dei-processi/">Automation RPA: Guida Completa all&#8217;Automazione Robotica dei Processi</a></li></ul></div><div class="aiai-cta"><strong>Vuoi automazioni AI su misura per la tua azienda?</strong><br><a href="https://aiautomationitalia.com/consulenza/">Scopri la consulenza &rarr;</a></div></div>
+
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c4378f5b wp-block-group-is-layout-constrained"><div class="taxonomy-post_tag wp-block-post-terms"><a href="https://aiautomationitalia.com/tag/automazioni/" rel="tag">Automazioni</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/backend/" rel="tag">Backend</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/integrazione/" rel="tag">Integrazione</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/interfaccia-utente/" rel="tag">Interfaccia Utente</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/n8n/" rel="tag">N8n</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/orchestrazione/" rel="tag">Orchestrazione</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/sicurezza/" rel="tag">Sicurezza</a><span class="wp-block-post-terms__separator">, </span><a href="https://aiautomationitalia.com/tag/webhook/" rel="tag">Webhook</a></div>
+
+
+<hr class="wp-block-separator has-css-opacity is-style-wide"/>
+
+
+</div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<div class="wp-block-group is-layout-flow wp-container-core-group-is-layout-f5bb311e wp-block-group-is-layout-flow">
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color is-style-logos-only is-content-justification-center is-layout-flex wp-container-core-social-links-is-layout-b20f1b96 wp-block-social-links-is-layout-flex"><li style="color: #0B0620; " class="wp-social-link wp-social-link-instagram has-foreground-color wp-block-social-link"><a href="https://www.instagram.com/aiautomationitalia/" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+
+<li style="color: #0B0620; " class="wp-social-link wp-social-link-x has-foreground-color wp-block-social-link"><a href="https://x.com/aiautomationita" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z" /></svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li></ul>
+
+
+<p style="font-style:normal;font-weight:400;" class="has-text-align-center wp-block-site-title has-medium-font-size"><a href="https://aiautomationitalia.com" target="_self" rel="home">AI Automation Italia</a></p></div>
+</div>
+</footer></div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/extendable\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Vai al contenuto';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="ez-toc-scroll-scriptjs-js-extra">
+var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":"","add_self_reference_link":""};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.76" id="ez-toc-scroll-scriptjs-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1" id="ez-toc-js-cookie-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2" id="ez-toc-jquery-sticky-kit-js"></script>
+<script id="ez-toc-js-js-extra">
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","scroll_offset":"30","fallbackIcon":"<span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>","chamomile_theme_is_on":""};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.76-1758542842" id="ez-toc-js-js"></script>
+<script id="extendable-navigation_customizations-js-extra">
+var ExtendableNavData = {"logoUrl":"https:\/\/aiautomationitalia.com\/wp-content\/uploads\/2025\/11\/AI-Automation-Italia-Logo-Cubi-000000-edited.png","siteTitle":"AI Automation Italia"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/themes/extendable/assets/js/navigation-customization.js" id="extendable-navigation_customizations-js"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/mailcheck.min.js?ver=2.3.2" id="mailcheck-js-js" defer data-wp-strategy="defer"></script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/jquery.email-autocomplete.min.js?ver=2.3.2" id="autocomplete-email-js-js" defer data-wp-strategy="defer"></script>
+<script id="mystickyelements-fronted-js-js-extra">
+var mystickyelements = {"ajaxurl":"https:\/\/aiautomationitalia.com\/wp-admin\/admin-ajax.php","ajax_nonce":"bfd6f07494"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/js/mystickyelements-fronted.min.js?ver=2.3.2" id="mystickyelements-fronted-js-js" defer data-wp-strategy="defer"></script>
+<script id="intl-tel-input-js-js-extra">
+var mystickyelement_obj = {"plugin_url":"https:\/\/aiautomationitalia.com\/wp-content\/plugins\/mystickyelements\/"};
+</script>
+<script src="https://aiautomationitalia.com/wp-content/plugins/mystickyelements/intl-tel-input-src/build/js/intlTelInput.js?ver=2.3.2" id="intl-tel-input-js-js" defer data-wp-strategy="defer"></script>
+            <div                 class="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-large mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-sharp">
+				<div class="mystickyelement-lists-wrap">
+					<ul class="mystickyelements-lists mysticky">
+													<li class="mystickyelements-minimize ">
+								<span class="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style="background: #000000" >
+								&larr;								</span>
+							</li>
+						
+						
+							<li id="mystickyelements-contact-form" class="mystickyelements-contact-form  element-desktop-on element-mobile-on"   data-tab-opt="hover" data-time-delay="0" >
+																<span class="mystickyelements-social-icon "
+									  style="background-color: #ec7210; color: #FFFFFF;"><i
+										class="far fa-envelope"></i>Bisogno di aiuto?</span>
+																<div class="element-contact-form" style="background-color: #ffffff">
+																		<div class="contact-form-heading" style="color: #ec7210;background-color:#ffffff">
+										Contact Form										<span href="#" class="element-contact-close"><i class="fas fa-times"></i></span>
+									</div>
+
+									<form id="stickyelements-form" class="stickyelements-form" action="" method="post" autocomplete="off" data-close-after="">
+																					<label>
+												<span class="sr-only">Nome</span>
+												<input
+													class=""
+													type="text" id="contact-form-name" name="contact-form-name" value=""
+													placeholder="Nome"   autocomplete="off"/>
+											</label>
+																					<label>
+												<span class="sr-only">Telefono</span>
+												<input
+													class=" required"
+													type="tel" id="contact-form-phone" name="contact-form-phone" value="" oninput="this.value = this.value.replace(/[^0-9+]/g, '');"
+													placeholder="Telefono*"  required  autocomplete="off" />
+											</label>
+											<input type="hidden" id="phone_formate" value="0">
+																					<label>
+												<span class="sr-only">Email</span>
+												<input
+													class="email  required"
+													type="email" id="contact-form-email" name="contact-form-email" value=""
+													placeholder="Email*"  required  autocomplete="off"/>
+											</label>
+																					<label>
+												<span class="sr-only">Messaggio</span>
+												<textarea
+													class=""
+													id="contact-form-message" name="contact-form-message"
+													placeholder="Messaggio" ></textarea>
+											</label>
+																				<p class="mse-form-success-message" id="mse-form-error" style="display:none;"></p>
+										<input id="stickyelements-submit-form" type="submit" name="contact-form-submit"
+											   value="Invio"
+											   style="background-color: #ec7210;color:#FFFFFF;"/>
+																				<input type="hidden" name="nonce" value="6aaacabcbe63817895779166aaacabcbe63b">
+										<input type="hidden" name="form_id"
+											   value="5b3e4f28a9">
+										<input type="hidden" id="stickyelements-page-link" name="stickyelements-page-link" value="https://aiautomationitalia.com/costruire-un-tool-interno-ui-backend-con-i-webhook-di-n8n/" />
+										
+									</form>
+								</div>
+							</li>
+														<li id="mystickyelements-social-insagram"
+									class="mystickyelements-social-icon-li mystickyelements- mystickyelements-social-insagram  element-desktop-on element-mobile-on">
+																			
+									<span class="mystickyelements-social-icon  social-insagram social-custom" data-tab-setting = 'hover' data-click = "0"data-mobile-behavior="disable" data-flyout="disable"
+										  >
+										
+																					<a class="social-link-insagram" href="https://www.instagram.com/aiautomationitalia/"   target="_blank" rel="noopener nofollow"  data-url="https://www.instagram.com/aiautomationitalia/" data-tab-setting = 'hover'  data-mobile-behavior="disable" data-flyout="disable" title="Instagram Page">
+																					<i class="fab fa-instagram" ></i>
+																					</a>
+																			</span>									
+																	<span class="mystickyelements-social-text " style= "" >
+																				<a class="social-link-insagram" href="https://www.instagram.com/aiautomationitalia/"   target="_blank" rel="noopener nofollow"   data-tab-setting = 'hover' data-flyout="disable" title="Instagram Page"
+										data-url="https://www.instagram.com/aiautomationitalia/"
+										
+										>
+																						Instagram Page																					</a>
+																		</span>
+																</li>
+															<li id="mystickyelements-social-twitter"
+									class="mystickyelements-social-icon-li mystickyelements- mystickyelements-social-twitter  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																				
+									<span class="mystickyelements-social-icon  social-twitter social-custom" data-tab-setting = 'hover' data-click = "0"data-mobile-behavior="disable" data-flyout="disable"
+										   style="background: #000000" >
+										
+																					<a class="social-link-twitter" href="https://x.com/aiautomationita"   target="_blank" rel="noopener nofollow"  data-url="https://x.com/aiautomationita" data-tab-setting = 'hover'  data-mobile-behavior="disable" data-flyout="disable" title="X">
+																					<i class="fa-brands fa-x-twitter" ></i>
+																					</a>
+																			</span>									
+																	<span class="mystickyelements-social-text " style= "background: #000000;" >
+																				<a class="social-link-twitter" href="https://x.com/aiautomationita"   target="_blank" rel="noopener nofollow"   data-tab-setting = 'hover' data-flyout="disable" title="X"
+										data-url="https://x.com/aiautomationita"
+										
+										>
+																						X																					</a>
+																		</span>
+																</li>
+												</ul>					
+				</div>
+            </div>
+		</body>
+</html>
