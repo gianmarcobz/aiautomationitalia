@@ -1,0 +1,126 @@
+/* AI Automation Italia — livello grafico "software/AI"
+   Sovrascrive il tema WordPress congelato. Nessun font esterno: zero richieste in piu'. */
+
+:root{
+  --aiai-ink:#0B0D10;        /* nero tecnico */
+  --aiai-ink-2:#14181D;
+  --aiai-line:#E3E6EA;
+  --aiai-line-dark:#232A31;
+  --aiai-text:#1A1F26;
+  --aiai-muted:#5B6672;
+  --aiai-bg:#FFFFFF;
+  --aiai-bg-alt:#F6F7F9;
+  --aiai-accent:#FF6A1A;
+  --aiai-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+
+/* ---------- base ---------- */
+body{background:var(--aiai-bg);color:var(--aiai-text);-webkit-font-smoothing:antialiased;}
+body, p, li{letter-spacing:-0.005em;}
+.wp-block-post-content p, .entry-content p{line-height:1.72;}
+a{text-underline-offset:3px;}
+
+/* titoli piu' stretti e decisi */
+h1,h2,h3,h4,.wp-block-heading{color:var(--aiai-ink);letter-spacing:-0.025em;line-height:1.15;font-weight:700;}
+h1,.wp-block-post-title{letter-spacing:-0.035em;}
+
+/* ---------- header ---------- */
+header.wp-block-template-part,
+.wp-site-blocks > header,
+header.wp-block-template-part > .wp-block-group{background:var(--aiai-ink)!important;background-color:var(--aiai-ink)!important;}
+header.wp-block-template-part{border-bottom:1px solid var(--aiai-line-dark);}
+header .wp-block-site-title a{color:#fff!important;letter-spacing:-0.02em;}
+header .wp-block-navigation-item__label{
+  font-family:var(--aiai-mono);font-size:12.5px;letter-spacing:0.06em;text-transform:uppercase;color:#C7CED6;}
+header .wp-block-navigation-item__content:hover .wp-block-navigation-item__label{color:#fff;}
+
+/* ---------- hero ---------- */
+.wp-block-cover{min-height:clamp(340px,46vh,460px)!important;background:var(--aiai-ink);}
+.wp-block-cover img.wp-block-cover__image-background,
+.wp-block-cover video.wp-block-cover__video-background{
+  opacity:.16!important;filter:grayscale(1) contrast(1.1);}
+.wp-block-cover .wp-block-cover__background{
+  background:var(--aiai-ink)!important;opacity:.82!important;}
+/* trama a puntini: segnale "tecnico" senza immagini */
+.wp-block-cover::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px);
+  background-size:22px 22px;mask-image:linear-gradient(180deg,#000 0%,transparent 80%);
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 80%);}
+.wp-block-cover h1,.wp-block-cover h2{font-size:clamp(2.2rem,5.2vw,3.6rem)!important;}
+.wp-block-cover p{color:#AEB8C4!important;font-family:var(--aiai-mono);font-size:14px;letter-spacing:.01em;}
+
+/* ---------- bottoni: via i gradienti ---------- */
+.wp-block-button__link{
+  background:var(--aiai-accent)!important;background-image:none!important;color:#fff!important;
+  border-radius:6px!important;padding:13px 22px!important;font-weight:600!important;
+  font-family:var(--aiai-mono);font-size:13px!important;letter-spacing:.04em;text-transform:uppercase;
+  box-shadow:none!important;transition:transform .12s ease,filter .12s ease;}
+.wp-block-button__link:hover{filter:brightness(1.07);transform:translateY(-1px);}
+.wp-block-button.is-style-outline .wp-block-button__link{
+  background:transparent!important;color:var(--aiai-ink)!important;border:1px solid var(--aiai-ink)!important;}
+
+/* ---------- sezioni e schede ---------- */
+/* solo le fasce chiare dentro il contenuto: header e footer restano scuri */
+.wp-site-blocks main .wp-block-group.has-background-background-color,
+.wp-site-blocks > main .wp-block-group.has-background{background-color:var(--aiai-bg-alt)!important;}
+/* foto di repertorio: smorzate, cosi' non dominano */
+.wp-site-blocks .wp-block-columns .wp-block-image img,
+.wp-site-blocks .wp-block-column .wp-block-image img{
+  filter:grayscale(.55) contrast(1.05);transition:filter .3s ease;}
+.wp-site-blocks .wp-block-columns .wp-block-image:hover img,
+.wp-site-blocks .wp-block-column .wp-block-image:hover img{filter:grayscale(0) contrast(1);}
+.wp-block-image img,.wp-block-post-featured-image img{border-radius:10px;border:1px solid var(--aiai-line);}
+figure.wp-block-image{margin-block:2rem;}
+
+/* etichetta mono sopra i titoli di sezione */
+.wp-block-group.has-background .wp-block-heading{font-size:clamp(1.5rem,3vw,2rem);}
+
+/* ---------- articolo ---------- */
+.wp-block-post-content h2,.entry-content h2{
+  margin-top:2.6em;padding-top:.9em;border-top:1px solid var(--aiai-line);font-size:1.65rem;}
+.wp-block-post-content h3,.entry-content h3{margin-top:2em;font-size:1.22rem;}
+.wp-block-post-content a,.entry-content a{color:#0F62C8;text-decoration-thickness:1px;}
+.wp-block-post-content a:hover,.entry-content a:hover{color:var(--aiai-accent);}
+blockquote{border-left:3px solid var(--aiai-accent);padding-left:1.1rem;color:var(--aiai-muted);font-style:normal;}
+
+/* codice: aspetto da terminale */
+code,kbd,samp{font-family:var(--aiai-mono);font-size:.9em;background:#F1F3F6;border:1px solid var(--aiai-line);
+  border-radius:4px;padding:.12em .38em;}
+pre,pre.wp-block-code{background:var(--aiai-ink-2)!important;color:#E6EBF1!important;border:1px solid var(--aiai-line-dark);
+  border-radius:10px;padding:18px 20px!important;overflow:auto;line-height:1.6;}
+pre code{background:transparent!important;border:0!important;color:inherit!important;padding:0!important;}
+
+/* indice dei contenuti */
+#ez-toc-container,.ez-toc-container{background:var(--aiai-bg-alt)!important;border:1px solid var(--aiai-line)!important;
+  border-radius:10px!important;box-shadow:none!important;}
+#ez-toc-container .ez-toc-title{font-family:var(--aiai-mono);text-transform:uppercase;letter-spacing:.06em;font-size:12px;}
+
+/* data / metadati in mono */
+.wp-block-post-date,.wp-block-post-terms,.wp-block-post-author-name{
+  font-family:var(--aiai-mono);font-size:12px;letter-spacing:.04em;color:var(--aiai-muted);text-transform:uppercase;}
+
+/* ---------- footer ---------- */
+footer.wp-block-template-part,.wp-site-blocks > footer,
+footer.wp-block-template-part > .wp-block-group{
+  background:var(--aiai-ink)!important;color:#9AA5B1;border-top:1px solid var(--aiai-line-dark);padding-block:2.5rem;}
+footer a,footer .wp-block-site-title a{color:#D7DEE6!important;}
+footer .wp-social-link a{color:#9AA5B1!important;}
+
+/* ---------- widget contatti ---------- */
+.element-contact-form{border:1px solid var(--aiai-line)!important;border-radius:12px!important;overflow:hidden;
+  box-shadow:0 10px 30px rgba(11,13,16,.12)!important;}
+.contact-form-heading{background:var(--aiai-ink)!important;color:#fff!important;
+  font-family:var(--aiai-mono);text-transform:uppercase;letter-spacing:.06em;font-size:12px;}
+.stickyelements-form button[data-tally-open]{
+  font-family:var(--aiai-mono);text-transform:uppercase;letter-spacing:.05em;font-size:13px;border-radius:6px;}
+
+/* ---------- linguetta laterale (mystickyelements) ---------- */
+.stickyelements-form-widget .element-item,
+.mystickyelements-fixed .mystickyelements-fixed-list li .mystickyelements-fixed-item{
+  background:var(--aiai-ink)!important;background-image:none!important;}
+.mystickyelements-fixed .mystickyelements-fixed-list li.mystickyelements-position-left .mystickyelements-fixed-item i,
+.mystickyelements-fixed-item i{color:#fff!important;}
+.mystickyelements-fixed .mystickyelements-fixed-list li .mystickyelements-fixed-name{
+  background:var(--aiai-accent)!important;font-family:var(--aiai-mono);font-size:12px;
+  letter-spacing:.05em;text-transform:uppercase;}
